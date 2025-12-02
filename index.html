@@ -9,10 +9,17 @@
 </head>
 <body>
     <header class="bg-primary-50 h-14 flex justify-center items-center px-3">
-        <nav class="w-full flex justify-between">
+        <div class="w-full flex justify-between md:w-[1296px] md:justify-start md:gap-[318px]">
             <a href="index.html"><img src="./src/assets/images/logo/logo.png" alt="Noel Logo"></a>
-            <button class="cursor-pointer"><img src="./src/assets/images/icon/menu-icon.svg" alt="漢堡選單"></button>
-        </nav>
+            <nav class="hidden w-[480px] justify-between md:flex">
+                <a class="flex items-center text6-2 cursor-pointer hover:font-bold active:font-bold href="index.html">首頁</a>
+                <a class="flex items-center text6-2 cursor-pointer hover:font-bold active:font-bold" href="#">作品集</a>
+                <a class="flex items-center text6-2 cursor-pointer hover:font-bold active:font-bold" href="#">服務項目</a>
+                <a class="flex items-center text6-2 cursor-pointer hover:font-bold active:font-bold" href="#">部落格</a>
+                <a class="flex items-center text6-2 cursor-pointer hover:font-bold active:font-bold" href="#">聯絡我</a>
+            </nav>
+            <button class="cursor-pointer md:hidden"><img src="./src/assets/images/icon/menu-icon.svg" alt="漢堡選單"></button>
+        </div>
     </header>
 </body>
 </html>
