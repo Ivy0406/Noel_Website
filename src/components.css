@@ -13,4 +13,5 @@
   .nav-link:active .nav-mark {
     @apply opacity-100;
   }
+
 }
