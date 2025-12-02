@@ -1,0 +1,16 @@
+@layer components {
+  .nav-link {
+    @apply relative inline-flex items-center justify-center cursor-pointer;
+  }
+
+  .nav-mark {
+    /* 預設隱藏 (opacity-0)，設定灰色邊框 (border-gray-400) */
+    @apply absolute w-2 h-2 border-primary-500 opacity-0 transition-opacity duration-200 pointer-events-none;
+  }
+
+  /* Hover 或 Active 時顯示 */
+  .nav-link:hover .nav-mark,
+  .nav-link:active .nav-mark {
+    @apply opacity-100;
+  }
+}

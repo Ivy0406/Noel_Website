@@ -7,9 +7,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-900: oklch(21% 0.034 264.665);
     --spacing: 0.25rem;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-primary-50: #FFFFFF;
@@ -165,8 +168,17 @@
   }
 }
 @layer utilities {
-  .block {
-    display: block;
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .flex {
     display: flex;
@@ -177,11 +189,17 @@
   .table {
     display: table;
   }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
   .h-full {
     height: 100%;
+  }
+  .w-12 {
+    width: calc(var(--spacing) * 12);
   }
   .w-\[480px\] {
     width: 480px;
@@ -210,24 +228,40 @@
   .justify-center {
     justify-content: center;
   }
-  .justify-start {
-    justify-content: flex-start;
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-r {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-l {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 1px;
+  }
   .bg-primary-50 {
     background-color: var(--color-primary-50);
   }
-  .bg-primary-500 {
-    background-color: var(--color-primary-500);
+  .px-1 {
+    padding-inline: calc(var(--spacing) * 1);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
-  .text-center {
-    text-align: center;
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .underline {
     text-decoration-line: underline;
@@ -235,6 +269,14 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .group-hover\:font-bold {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-bold);
+        font-weight: var(--font-weight-bold);
+      }
+    }
   }
   .hover\:font-bold {
     &:hover {
@@ -260,34 +302,9 @@
       display: none;
     }
   }
-  .md\:w-\[888px\] {
-    @media (width >= 48rem) {
-      width: 888px;
-    }
-  }
-  .md\:w-\[900px\] {
-    @media (width >= 48rem) {
-      width: 900px;
-    }
-  }
-  .md\:w-\[1200px\] {
-    @media (width >= 48rem) {
-      width: 1200px;
-    }
-  }
   .md\:w-\[1296px\] {
     @media (width >= 48rem) {
       width: 1296px;
-    }
-  }
-  .md\:justify-baseline {
-    @media (width >= 48rem) {
-      justify-content: baseline;
-    }
-  }
-  .md\:justify-center {
-    @media (width >= 48rem) {
-      justify-content: center;
     }
   }
   .md\:justify-start {
@@ -432,6 +449,31 @@
     font-family: 'Tourney', sans-serif;
   }
 }
+@layer components {
+  .nav-link {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-mark {
+    pointer-events: none;
+    position: absolute;
+    height: calc(var(--spacing) * 2);
+    width: calc(var(--spacing) * 2);
+    border-color: var(--color-primary-500);
+    opacity: 0%;
+    transition-property: opacity;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
+  .nav-link:hover .nav-mark, .nav-link:active .nav-mark {
+    opacity: 100%;
+  }
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -474,6 +516,10 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -487,6 +533,7 @@
       --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-leading: initial;
+      --tw-duration: initial;
     }
   }
 }
