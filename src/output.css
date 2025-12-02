@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-900: oklch(21% 0.034 264.665);
     --spacing: 0.25rem;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
@@ -186,9 +185,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -198,26 +194,17 @@
   .h-full {
     height: 100%;
   }
-  .w-12 {
-    width: calc(var(--spacing) * 12);
-  }
   .w-\[480px\] {
     width: 480px;
   }
   .w-full {
     width: 100%;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .items-center {
     align-items: center;
@@ -227,10 +214,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
@@ -251,9 +234,6 @@
   .bg-primary-50 {
     background-color: var(--color-primary-50);
   }
-  .px-1 {
-    padding-inline: calc(var(--spacing) * 1);
-  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -263,33 +243,12 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .group-hover\:font-bold {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         --tw-font-weight: var(--font-weight-bold);
         font-weight: var(--font-weight-bold);
       }
-    }
-  }
-  .hover\:font-bold {
-    &:hover {
-      @media (hover: hover) {
-        --tw-font-weight: var(--font-weight-bold);
-        font-weight: var(--font-weight-bold);
-      }
-    }
-  }
-  .active\:font-bold {
-    &:active {
-      --tw-font-weight: var(--font-weight-bold);
-      font-weight: var(--font-weight-bold);
     }
   }
   .md\:flex {
@@ -499,11 +458,6 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -529,7 +483,6 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-outline-style: solid;
       --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-leading: initial;
