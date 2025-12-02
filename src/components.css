@@ -13,4 +13,8 @@
   .nav-link:active .nav-mark {
     @apply opacity-100;
   }
+
+  .tag{
+    @apply  py-1 px-3 font-[16px] bg-primary-200 rounded-2xl text-primary-700;
+  }
 }
