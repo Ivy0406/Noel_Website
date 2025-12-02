@@ -10,6 +10,7 @@
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-normal: 400;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -164,19 +165,6 @@
   }
 }
 @layer utilities {
-  .table {
-    display: table;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -184,29 +172,156 @@
   .text-amber-200 {
     color: var(--color-amber-200);
   }
-  .underline {
-    text-decoration-line: underline;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/fonts/NotoSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tourney';
+  src: url('/fonts/Tourney-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@layer base {
+  h1 {
+    font-size: 40px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    font-family: 'Noto Sans', sans-serif;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  h2 {
+    font-size: 32px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    --tw-tracking: 12%;
+    letter-spacing: 12%;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .h2-2 {
+    font-size: 32px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  h3 {
+    font-size: 28px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  h4 {
+    font-size: 24px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    --tw-tracking: 12%;
+    letter-spacing: 12%;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .h4-2 {
+    font-size: 24px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .h4-3 {
+    font-size: 24px;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  h5 {
+    font-size: 20px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  h6 {
+    font-size: 16px;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .text2 {
+    font-size: 32px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .text3 {
+    font-size: 28px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .text4 {
+    font-size: 24px;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .text5 {
+    font-size: 20px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .text5-2 {
+    font-size: 20px;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .text6 {
+    font-size: 16px;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .text6-2 {
+    font-size: 16px;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  .number-lg {
+    font-size: 72px;
+    --tw-leading: 1.2;
+    line-height: 1.2;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    font-family: 'Tourney', sans-serif;
+  }
+  .number-sm {
+    font-size: 48px;
+    --tw-leading: 1.2;
+    line-height: 1.2;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+    font-family: 'Tourney', sans-serif;
   }
 }
-@property --tw-border-style {
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
 }
-@property --tw-outline-style {
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-leading: initial;
     }
   }
 }
