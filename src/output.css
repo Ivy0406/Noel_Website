@@ -421,11 +421,41 @@
   .bg-primary-900 {
     background-color: var(--color-primary-900);
   }
+  .bg-\[url\(\'\.\/\'\)\] {
+    background-image: url('./');
+  }
+  .bg-\[url\(\'\/\'\)\] {
+    background-image: url('/');
+  }
+  .bg-\[url\(\'\/src\/assets\/images\/bg\.jpg\'\)\] {
+    background-image: url('/src/assets/images/bg.jpg');
+  }
+  .bg-\[url\(\'\/src\/assets\/images\/ser\.jpg\'\)\] {
+    background-image: url('/src/assets/images/ser.jpg');
+  }
+  .bg-\[url\(\'\/src\/assets\/images\/service-bg\.jpg\'\)\] {
+    background-image: url('/src/assets/images/service-bg.jpg');
+  }
+  .bg-\[url\(\'\/src\/assets\/images\/service-bg\/process-bg\.png\'\)\] {
+    background-image: url('/src/assets/images/service-bg/process-bg.png');
+  }
+  .bg-\[url\(\'\/src\/assets\/images\/service-bg\/process-bg\.png\.jpg\'\)\] {
+    background-image: url('/src/assets/images/service-bg/process-bg.png.jpg');
+  }
   .bg-\[url\(\'\/src\/assets\/images\/service-bg\/service-item-bg\.png\'\)\] {
     background-image: url('/src/assets/images/service-bg/service-item-bg.png');
   }
+  .bg-\[url\(\'\/src\/assets\/images\/service\.jpg\'\)\] {
+    background-image: url('/src/assets/images/service.jpg');
+  }
   .bg-\[url\(\/src\/assets\/images\/footer\/footer-bg-sm\.png\)\] {
     background-image: url(/src/assets/images/footer/footer-bg-sm.png);
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
   }
   .object-center {
     object-position: center;
