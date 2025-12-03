@@ -201,8 +201,8 @@
     font-size: 32px;
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-    --tw-tracking: 12%;
-    letter-spacing: 12%;
+    --tw-tracking: 3.84px;
+    letter-spacing: 3.84px;
     font-family: 'Noto Sans', sans-serif;
   }
   .h2-2 {
@@ -221,8 +221,8 @@
     font-size: 24px;
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-    --tw-tracking: 12%;
-    letter-spacing: 12%;
+    --tw-tracking: 2.88px;
+    letter-spacing: 2.88px;
     font-family: 'Noto Sans', sans-serif;
   }
   .h4-2 {
