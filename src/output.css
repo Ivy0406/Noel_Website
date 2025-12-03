@@ -499,6 +499,9 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -562,6 +565,9 @@
   .tracking-\[3\.84px\] {
     --tw-tracking: 3.84px;
     letter-spacing: 3.84px;
+  }
+  .text-\[2opx\] {
+    color: 2opx;
   }
   .text-primary-50 {
     color: var(--color-primary-50);
@@ -850,6 +856,11 @@
   .lg\:text-\[28px\] {
     @media (width >= 64rem) {
       font-size: 28px;
+    }
+  }
+  .lg\:text-\[32px\] {
+    @media (width >= 64rem) {
+      font-size: 32px;
     }
   }
   .xl\:grid-cols-4 {
