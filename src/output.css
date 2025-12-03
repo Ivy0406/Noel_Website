@@ -211,6 +211,9 @@
   .z-2 {
     z-index: 2;
   }
+  .mx-auto {
+    margin-inline: auto;
+  }
   .-mt-\[297px\] {
     margin-top: calc(297px * -1);
   }
@@ -352,8 +355,14 @@
   .w-full {
     width: 100%;
   }
+  .max-w-\[1154px\] {
+    max-width: 1154px;
+  }
   .max-w-\[1296px\] {
     max-width: 1296px;
+  }
+  .max-w-\[1920px\] {
+    max-width: 1920px;
   }
   .max-w-full {
     max-width: 100%;
@@ -579,6 +588,9 @@
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
   }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
   .text-center {
     text-align: center;
   }
@@ -716,9 +728,19 @@
       gap: 318px;
     }
   }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .lg\:h-\[72px\] {
@@ -746,6 +768,11 @@
       width: 72px;
     }
   }
+  .lg\:w-\[430px\] {
+    @media (width >= 64rem) {
+      width: 430px;
+    }
+  }
   .lg\:w-\[636px\] {
     @media (width >= 64rem) {
       width: 636px;
@@ -754,6 +781,26 @@
   .lg\:w-\[670px\] {
     @media (width >= 64rem) {
       width: 670px;
+    }
+  }
+  .lg\:w-fit {
+    @media (width >= 64rem) {
+      width: fit-content;
+    }
+  }
+  .lg\:w-full {
+    @media (width >= 64rem) {
+      width: 100%;
+    }
+  }
+  .lg\:max-w-\[1154px\] {
+    @media (width >= 64rem) {
+      max-width: 1154px;
+    }
+  }
+  .lg\:min-w-\[430px\] {
+    @media (width >= 64rem) {
+      min-width: 430px;
     }
   }
   .lg\:grid-cols-2 {
@@ -766,9 +813,29 @@
       flex-direction: row;
     }
   }
+  .lg\:flex-row-reverse {
+    @media (width >= 64rem) {
+      flex-direction: row-reverse;
+    }
+  }
+  .lg\:items-start {
+    @media (width >= 64rem) {
+      align-items: flex-start;
+    }
+  }
+  .lg\:justify-end {
+    @media (width >= 64rem) {
+      justify-content: flex-end;
+    }
+  }
   .lg\:justify-start {
     @media (width >= 64rem) {
       justify-content: flex-start;
+    }
+  }
+  .lg\:gap-2 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 2);
     }
   }
   .lg\:gap-6 {
@@ -804,6 +871,16 @@
   .lg\:pb-4 {
     @media (width >= 64rem) {
       padding-bottom: calc(var(--spacing) * 4);
+    }
+  }
+  .lg\:pl-3 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 3);
+    }
+  }
+  .lg\:pl-4 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 4);
     }
   }
   .lg\:text-\[24px\] {
