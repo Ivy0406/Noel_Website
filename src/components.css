@@ -14,4 +14,8 @@
     @apply opacity-100;
   }
 
+  .tag {
+    @apply py-1 px-3 bg-primary-200 text-primary-700 text-[16px] rounded-2xl
+  }
+
 }
