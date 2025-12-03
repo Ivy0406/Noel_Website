@@ -60,12 +60,12 @@
     </header>
     </section>
     <!-- main -->
-    <main class="w-full flex flex-col justify-center items-center">
+    <main class="w-full flex flex-col justify-center items-center  lg:px-0">
       <!-- banner -->
-      <section class=" w-full flex flex-col items-center gap-6 pt-10 pb-20 lg:py-20 lg:h-[460px]  bg-primary-100">
-        <div class="w-[670px] flex flex-col justify-between items-center">
+      <section class=" w-full flex flex-col items-center gap-10 lg:gap-6 pt-10 pb-20 lg:py-20 lg:h-[460px]  bg-primary-100">
+        <div class=" lg:w-[670px] flex flex-col justify-between items-center">
           <!-- ""符號 -->
-           <div class="w-full flex justify-start">
+           <div class="w-full flex lg:justify-start justify-center">
           <img
             src="./src/assets/images/icon/quote-left.svg"
             alt="quote"
@@ -73,20 +73,30 @@
           />
           </div>
           <!-- 標題字 -->
-          <div>
-            <div class="flex flex-col justify-center items-center">
-              <div class="relative">
-                <h4 class="font-normal text-[20px] lg:text-[24px]">
-                  讓使用者在觀賞與使用的旅程中，發現設計的價值
+          <div class="w-full ">
+            <div class="flex flex-col justify-center items-center gap-2 lg:pb-4 ">
+              <div class="flex lg:flex-row  flex-col">
+                <h4 class="font-normal text-[20px] lg:text-[24px] text-center">
+                  讓使用者在觀賞與使用的旅程中，
                 </h4>
-                <img src="./src/assets/images/icon/mark.svg" class="absolute right-0 bottom-0">
-              </div>
-              <div class="relative">
-                <h4 class="font-normal text-[20px] lg:text-[24px]">
-                  而我在設計與開發的過程中，看見自己的價值
+                <div class="flex justify-center relative">
+                <h4 class="inline-block font-normal text-[20px] lg:text-[24px]">
+                  發現設計的價值
                 </h4>
-                 <img src="./src/assets/images/icon/mark.svg" class="absolute right-0 bottom-0">
+                <img src="./src/assets/images/icon/mark.svg" class="absolute bottom-0">
               </div>
+            </div>
+              <div class="flex lg:flex-row  flex-col">
+                <h4 class="font-normal text-[20px] lg:text-[24px] text-center">
+                  而我在設計與開發的過程中，
+                </h4>
+                <div class="flex justify-center relative">
+                <h4 class="inline-block font-normal text-[20px] lg:text-[24px]">
+                  看見自己的價值
+                </h4>
+                <img src="./src/assets/images/icon/mark.svg" class="absolute bottom-0">
+              </div>
+            </div>
             </div>
           </div>
           <!-- ""符號 -->
@@ -128,15 +138,15 @@
         </div>
       </section>
       <!-- list -->
-       <section class="max-w-[1296px] w-full flex flex-col items-center gap-18 lg:py-30 py-20  lg:h-[460px]">
+       <section class="max-w-[1296px] w-full flex flex-col items-center gap-18 lg:py-30 py-20 px-3">
         <div class="w-full grid lg:grid-cols-2 grid-cols-1 gap-12 lg:gap-20">
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image1.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image1.png" alt="" class="w-full lg:h-[400px] lg:h-[224px] rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
-            <h2 class="text-primary-700">星際旅行訂票平台</h2>
+            <h2 class="text-primary-700 lg:text-[28px] text-[20px]">星際旅行訂票平台</h2>
             <p class="text-primary-500">悠遊宇宙的夢想，從這裡開始實現</p>
             </div>
             <div class="flex gap-4">
@@ -148,11 +158,11 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image2.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image2.png" alt="" class="w-full lg:h-[400px] lg:h-[224px] rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
-            <h2 class="text-primary-700">理財App</h2>
+            <h2 class="text-primary-700 lg:text-[28px] text-[20px]">理財App</h2>
             <p class="text-primary-500">連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
             </div>
             <div class="flex gap-4">
@@ -164,11 +174,11 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image3.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image3.png" alt="" class="w-full lg:h-[400px] lg:h-[224px] rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
-            <h2 class="text-primary-700">醫美診所官網</h2>
+            <h2 class="text-primary-700 lg:text-[28px] text-[20px]">醫美診所官網</h2>
             <p class="text-primary-500">永保青春的秘密，從粹究開始</p>
             </div>
             <div class="flex gap-4">
@@ -180,11 +190,11 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image4.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image4.png" alt="" class="w-full lg:h-[400px] lg:h-[224px] rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
-            <h2 class="text-primary-700">美美美早餐店 POS 機 UI Design</h2>
+            <h2 class="text-primary-700 lg:text-[28px] text-[20px]">美美美早餐店 POS 機 UI Design</h2>
             <p class="text-primary-500">訂單送單一目瞭然，自動報表分析好輕鬆</p>
             </div>
             <div class="flex gap-4">
@@ -196,11 +206,11 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image5.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image5.png" alt="" class="w-full lg:h-[400px] lg:h-[224px] rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
-            <h2 class="text-primary-700">電影院訂票系統</h2>
+            <h2 class="text-primary-700 lg:text-[28px] text-[20px]">電影院訂票系統</h2>
             <p class="text-primary-500">三步驟完成訂票，電腦手機都支援</p>
             </div>
             <div class="flex gap-4">
@@ -212,11 +222,11 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image6.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image6.png" alt="" class="w-full lg:h-[400px] lg:h-[224px] rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
-            <h2 class="text-primary-700">巧克巧克形象官網設計</h2>
+            <h2 class="text-primary-700 lg:text-[28px] text-[20px]">巧克巧克形象官網設計</h2>
             <p class="text-primary-500">三步驟完成訂票，電腦手機都支援</p>
             </div>
             <div class="flex gap-4">
@@ -238,7 +248,70 @@
       </section>
     </main>
     <!-- footer -->
-    <section>
+    <section class="w-full">
+        <footer
+      class="bg-[url(/src/assets/images/footer/footer-bg-sm.png)] py-10 px-3 flex justify-center "
+      alt="表尾背景圖-行動版"
+    >
+      <div class="flex flex-col justify-center items-center gap-10 md:flex-row md:w-[1296px] md:justify-between">
+        <div
+          class="flex flex-col gap-6 justify-center items-center md:items-start"
+        >
+          <div class="w-30 h-[54px]">
+            <img
+              class="object-center w-full h-full"
+              src="./src/assets/images/logo/logo.svg"
+              alt="Noel_Logo"
+            />
+          </div>
+
+          <div class="flex flex-col gap-1 text6-2 text-primary-700">
+            <p>若有數位產品設計和開發相關問題</p>
+            <p>歡迎填寫表單，或直接與我聯絡！</p>
+          </div>
+          <p class="text6-2 text-primary-500">service@hexschool.com</p>
+        </div>
+
+        <nav class="flex flex-col gap-6 w-[306px]">
+          <div class="h-16 bg-primary-900 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/list.svg"
+                alt="填寫表單"
+              />
+              <p class="text-primary-50 text5">填寫表單</p>
+            </a>
+          </div>
+          <div class="h-16 bg-primary-50 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/instagram.svg"
+                alt="Instagram"
+              />
+              <p class="text-primary-700 text5-2">hexschool_demo</p>
+            </a>
+          </div>
+          <div class="h-16 bg-primary-50 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/facebook.svg"
+                alt="Facebook"
+              />
+              <p class="text-primary-700 text5-2">hexschoolTW</p>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </footer>
        
 
     </section>
