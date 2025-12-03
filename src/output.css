@@ -8,8 +8,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
-    --text-4xl: 2.25rem;
-    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --radius-sm: 0.25rem;
@@ -209,6 +207,9 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -254,11 +255,17 @@
   .max-w-\[1296px\] {
     max-width: 1296px;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -299,14 +306,15 @@
   .gap-18 {
     gap: calc(var(--spacing) * 18);
   }
-  .rounded-\[6px\] {
-    border-radius: 6px;
-  }
   .rounded-md {
     border-radius: var(--radius-md);
   }
   .rounded-sm {
     border-radius: var(--radius-sm);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
@@ -333,38 +341,20 @@
   .bg-primary-800 {
     background-color: var(--color-primary-800);
   }
-  .bg-primary-900 {
-    background-color: var(--color-primary-900);
-  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
-  .px-\[13px\] {
-    padding-inline: 13px;
-  }
-  .py-0\.5 {
-    padding-block: calc(var(--spacing) * 0.5);
-  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
-  }
-  .py-6 {
-    padding-block: calc(var(--spacing) * 6);
   }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
   }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
-  }
-  .py-\[2px\] {
-    padding-block: 2px;
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -396,6 +386,13 @@
   }
   .text-primary-800 {
     color: var(--color-primary-800);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .group-hover\:font-bold {
     &:is(:where(.group):hover *) {
@@ -523,12 +520,6 @@
   .lg\:text-\[24px\] {
     @media (width >= 64rem) {
       font-size: 24px;
-    }
-  }
-  .lg\:font-\[24px\] {
-    @media (width >= 64rem) {
-      --tw-font-weight: 24px;
-      font-weight: 24px;
     }
   }
 }
@@ -726,6 +717,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-content {
   syntax: "*";
   initial-value: "";
@@ -753,6 +749,7 @@
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-content: "";
       --tw-tracking: initial;
       --tw-leading: initial;
