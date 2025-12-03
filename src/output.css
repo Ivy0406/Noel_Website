@@ -24,6 +24,7 @@
     --color-primary-500: #919191;
     --color-primary-600: #5B5B5B;
     --color-primary-700: #3B3B3B;
+    --color-primary-800: #1E1E1E;
     --color-primary-900: #000000;
   }
 }
@@ -287,6 +288,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -299,8 +303,14 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-\[8px\] {
+    border-radius: 8px;
+  }
   .rounded-\[16px\] {
     border-radius: 16px;
+  }
+  .rounded-\[20px\] {
+    border-radius: 20px;
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -362,6 +372,9 @@
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -395,6 +408,12 @@
   .pr-23 {
     padding-right: calc(var(--spacing) * 23);
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
   }
@@ -406,6 +425,9 @@
   }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[24px\] {
+    font-size: 24px;
   }
   .text-\[28px\] {
     font-size: 28px;
@@ -429,6 +451,9 @@
   }
   .text-primary-700 {
     color: var(--color-primary-700);
+  }
+  .text-primary-800 {
+    color: var(--color-primary-800);
   }
   .group-hover\:font-bold {
     &:is(:where(.group):hover *) {
@@ -518,6 +543,11 @@
       gap: calc(var(--spacing) * 0);
     }
   }
+  .lg\:gap-6 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
   .lg\:gap-10 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 10);
@@ -569,6 +599,11 @@
       padding: calc(var(--spacing) * 1);
     }
   }
+  .lg\:px-0 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
+  }
   .lg\:px-10 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 10);
@@ -594,6 +629,11 @@
       padding-bottom: calc(var(--spacing) * 1);
     }
   }
+  .lg\:pb-20 {
+    @media (width >= 64rem) {
+      padding-bottom: calc(var(--spacing) * 20);
+    }
+  }
   .lg\:pl-1 {
     @media (width >= 64rem) {
       padding-left: calc(var(--spacing) * 1);
@@ -602,6 +642,11 @@
   .lg\:pl-6 {
     @media (width >= 64rem) {
       padding-left: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:text-\[24px\] {
+    @media (width >= 64rem) {
+      font-size: 24px;
     }
   }
   .xl\:grid-cols-4 {
