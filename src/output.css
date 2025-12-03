@@ -7,9 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-50: oklch(97.1% 0.013 17.38);
-    --color-amber-300: oklch(87.9% 0.169 91.605);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
     --spacing: 0.25rem;
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
@@ -17,8 +14,8 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --tracking-wide: 0.025em;
+    --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
-    --radius-3xl: 1.5rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -27,6 +24,7 @@
     --color-primary-400: #C1C1C1;
     --color-primary-500: #919191;
     --color-primary-700: #3B3B3B;
+    --color-primary-900: #000000;
   }
 }
 @layer base {
@@ -190,9 +188,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
   }
@@ -201,9 +196,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
@@ -217,17 +209,20 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
-  .h-\[34\.1px\] {
-    height: 34.1px;
-  }
   .h-\[54px\] {
     height: 54px;
   }
   .h-full {
     height: 100%;
   }
+  .w-14 {
+    width: calc(var(--spacing) * 14);
+  }
   .w-20 {
     width: calc(var(--spacing) * 20);
+  }
+  .w-30 {
+    width: calc(var(--spacing) * 30);
   }
   .w-\[306px\] {
     width: 306px;
@@ -235,26 +230,17 @@
   .w-\[480px\] {
     width: 480px;
   }
-  .w-auto {
-    width: auto;
-  }
   .w-full {
     width: 100%;
   }
   .max-w-\[1296px\] {
     max-width: 1296px;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -265,14 +251,20 @@
   .items-center {
     align-items: center;
   }
-  .items-start {
-    align-items: flex-start;
-  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -285,6 +277,9 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -309,14 +304,20 @@
   .border-primary-400 {
     border-color: var(--color-primary-400);
   }
-  .border-primary-500 {
-    border-color: var(--color-primary-500);
-  }
   .bg-primary-50 {
     background-color: var(--color-primary-50);
   }
+  .bg-primary-900 {
+    background-color: var(--color-primary-900);
+  }
   .bg-\[url\(\'\/src\/assets\/images\/service-bg\/service-item-bg\.png\'\)\] {
     background-image: url('/src/assets/images/service-bg/service-item-bg.png');
+  }
+  .bg-\[url\(\/src\/assets\/images\/footer\/footer-bg-sm\.png\)\] {
+    background-image: url(/src/assets/images/footer/footer-bg-sm.png);
+  }
+  .object-center {
+    object-position: center;
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -330,16 +331,11 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .py-20 {
     padding-block: calc(var(--spacing) * 20);
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .font-semibold {
-    --tw-font-weight: var(--font-weight-semibold);
-    font-weight: var(--font-weight-semibold);
   }
   .tracking-\[2\.88px\] {
     --tw-tracking: 2.88px;
@@ -349,26 +345,14 @@
     --tw-tracking: 3.84px;
     letter-spacing: 3.84px;
   }
-  .tracking-\[12\%\] {
-    --tw-tracking: 12%;
-    letter-spacing: 12%;
-  }
-  .tracking-wide {
-    --tw-tracking: var(--tracking-wide);
-    letter-spacing: var(--tracking-wide);
-  }
   .text-primary-50 {
     color: var(--color-primary-50);
   }
+  .text-primary-500 {
+    color: var(--color-primary-500);
+  }
   .text-primary-700 {
     color: var(--color-primary-700);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .group-hover\:font-bold {
     &:is(:where(.group):hover *) {
@@ -393,11 +377,6 @@
       display: none;
     }
   }
-  .md\:w-\[686px\] {
-    @media (width >= 48rem) {
-      width: 686px;
-    }
-  }
   .md\:w-\[1296px\] {
     @media (width >= 48rem) {
       width: 1296px;
@@ -408,6 +387,21 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
+    }
+  }
+  .md\:items-start {
+    @media (width >= 48rem) {
+      align-items: flex-start;
+    }
+  }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
+    }
+  }
   .md\:justify-start {
     @media (width >= 48rem) {
       justify-content: flex-start;
@@ -416,11 +410,6 @@
   .md\:gap-\[318px\] {
     @media (width >= 48rem) {
       gap: 318px;
-    }
-  }
-  .md\:text-\[32px\] {
-    @media (width >= 48rem) {
-      font-size: 32px;
     }
   }
   .xl\:grid-cols-4 {
@@ -610,18 +599,13 @@
   inherits: false;
   initial-value: solid;
 }
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
+@property --tw-font-weight {
   syntax: "*";
   inherits: false;
-  initial-value: solid;
 }
 @property --tw-leading {
   syntax: "*";
@@ -640,9 +624,8 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
+      --tw-font-weight: initial;
       --tw-leading: initial;
       --tw-duration: initial;
     }
