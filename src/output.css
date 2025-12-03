@@ -8,12 +8,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --spacing: 0.25rem;
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-normal: 400;
-    --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --tracking-wide: 0.025em;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
     --default-transition-duration: 150ms;
