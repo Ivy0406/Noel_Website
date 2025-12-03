@@ -214,6 +214,9 @@
   .-mt-\[297px\] {
     margin-top: calc(297px * -1);
   }
+  .-mt-\[300px\] {
+    margin-top: calc(300px * -1);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -270,6 +273,12 @@
   }
   .h-\[72px\] {
     height: 72px;
+  }
+  .h-\[200\.75px\] {
+    height: 200.75px;
+  }
+  .h-\[210px\] {
+    height: 210px;
   }
   .h-\[297px\] {
     height: 297px;
@@ -489,6 +498,18 @@
   .bg-\[url\(\'\/src\/assets\/images\/homepage-work1\/homepage-work1-bg\.png\'\)\] {
     background-image: url('/src/assets/images/homepage-work1/homepage-work1-bg.png');
   }
+  .bg-\[url\(\'\/src\/assets\/images\/homepage-work1\/homepage-work2\.png\'\)\] {
+    background-image: url('/src/assets/images/homepage-work1/homepage-work2.png');
+  }
+  .bg-\[url\(\'\/src\/assets\/images\/homepage-work2\/homepage-work2-sm\.png\'\)\] {
+    background-image: url('/src/assets/images/homepage-work2/homepage-work2-sm.png');
+  }
+  .bg-\[url\(\'\/src\/assets\/images\/homepage-work2\/homepage-work2\.png\'\)\] {
+    background-image: url('/src/assets/images/homepage-work2/homepage-work2.png');
+  }
+  .bg-\[url\(\'\/src\/assets\/images\/homepage-work3\/homepage-work3-bg\.png\'\)\] {
+    background-image: url('/src/assets/images/homepage-work3/homepage-work3-bg.png');
+  }
   .bg-\[url\(\'\/src\/assets\/images\/service-bg\/service-item-bg\.png\'\)\] {
     background-image: url('/src/assets/images/service-bg/service-item-bg.png');
   }
@@ -503,6 +524,12 @@
   }
   .bg-bottom {
     background-position: bottom;
+  }
+  .bg-bottom-left {
+    background-position: left bottom;
+  }
+  .bg-bottom-right {
+    background-position: right bottom;
   }
   .bg-center {
     background-position: center;
