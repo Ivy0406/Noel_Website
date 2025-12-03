@@ -156,10 +156,11 @@
             alt="標題裝飾線-網頁版-右側"
           />
         </div>
-        <div class="flex flex-col gap-12">
+        <div class="flex flex-col gap-12 lg:gap-0">
+          <!-- 星際旅行訂票平台 -->
           <section class="w-full flex flex-col">
             <div
-              class="h-[390px] bg-no-repeat bg-cover bg-bottom bg-[url('/src/assets/images/homepage-work1/homepage-work1-bg.png')] justify-items-center mb-6 lg:h-200 lg:relative"
+              class="h-[390px] bg-no-repeat bg-cover bg-bottom bg-[url('/src/assets/images/homepage-work1/homepage-work1-bg.png')] justify-items-center mb-6 lg:h-200 lg:relative lg:mb-0"
             >
               <div class="w-full h-full bg-[#272727]/40"></div>
               <!-- 行動版作品圖片 -->
@@ -169,22 +170,29 @@
                 alt="星際旅行訂票平台"
               />
               <!-- 網頁版作品簡介 -->
-              <div class="hidden h-full absolute bottom-0 justify-between items-center w-full max-w-[1296px] px-3 gap-[55px] lg:flex">
+              <div
+                class="hidden h-full absolute bottom-0 justify-between items-center w-full max-w-[1296px] px-3 gap-[55px] lg:flex"
+              >
                 <div class="h-full flex flex-col justify-end">
-                  <img class="block  w-auto"
-                  src="./src/assets/images/homepage-work1/homepage-work1.png"
-                  alt="星際旅行訂票平台"
-                />
+                  <img
+                    class="block w-auto"
+                    src="./src/assets/images/homepage-work1/homepage-work1.png"
+                    alt="星際旅行訂票平台"
+                  />
                 </div>
-                
-                <div class="flex-1 flex flex-col items-center bg-primary-50/10 bg-blur rounded-3xl w-full max-w-[526px] h-fit pt-20 pr-10 pl-10 pb-14">
+
+                <div
+                  class="flex-4/10 flex flex-col items-center bg-primary-50/10 backdrop-blur-[8px] rounded-3xl w-full max-w-[526px] h-fit pt-20 pr-10 pl-10 pb-14"
+                >
                   <div class="flex flex-col text-start gap-2 w-full">
                     <h5 class="text-primary-50">星際旅行訂票平台</h5>
                     <p class="text6-2 text-primary-50">
                       悠遊宇宙的夢想，從這裡開始實現
                     </p>
                   </div>
-                  <div class="w-full flex justify-start gap-2 mt-4 border-b border-b-primary-50 pb-10">
+                  <div
+                    class="w-full flex flex-wrap justify-start gap-2 mt-4 border-b border-b-primary-50 pb-10"
+                  >
                     <div
                       class="px-3 w-fit h-8 bg-primary-200 rounded-2xl flex justify-center items-center text-primary-700"
                     >
@@ -202,7 +210,7 @@
                     </div>
                   </div>
                   <button
-                    class=" bg-primary-900 text-primary-50 flex justify-center gap-2 px-4 py-2 w-fit rounded-[5px] mt-10 cursor-pointer"
+                    class="bg-primary-900 text-primary-50 flex justify-center gap-2 px-4 py-2 w-fit rounded-[5px] mt-10 cursor-pointer"
                   >
                     <p class="text6">完整介紹</p>
                     <span class="material-symbols-outlined text-primary-50">
@@ -212,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <!-- 行動版 -->
+            <!-- 行動版作品簡介 -->
             <div class="flex flex-col items-center lg:hidden">
               <div class="flex flex-col text-center gap-2">
                 <h5 class="text-primary-800">星際旅行訂票平台</h5>
@@ -247,12 +255,13 @@
               </button>
             </div>
           </section>
-
+          <!-- 理財APP -->
           <section class="w-full flex flex-col">
+            <!-- 行動版 -->
             <div
-              class="h-[390px] bg-no-repeat bg-cover bg-bottom bg-[url('/src/assets/images/homepage-work2/homepage-work2-sm.png')] justify-items-center mb-6"
+              class="h-[390px] bg-no-repeat bg-cover bg-bottom bg-[url('/src/assets/images/homepage-work2/homepage-work2-sm.png')] justify-items-center mb-6 lg:hidden"
             ></div>
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center lg:hidden">
               <div class="flex flex-col text-center gap-2 px-6">
                 <h5 class="text-primary-800">理財APP</h5>
                 <p class="text6-2 text-primary-600">
@@ -285,20 +294,121 @@
                 </span>
               </button>
             </div>
+            <!-- 網頁版 -->
+            <div
+              class="bg-no-repeat bg-cover bg-bottom bg-[url('/src/assets/images/homepage-work2/homepage-work2-lg.png')] justify-items-center h-200 flex justify-start relative"
+            >
+              <div class="w-1/2 h-full bg-[#0A101380]/50 absolute z-0"></div>
+              <div
+                class="w-full max-w-[1296px] z-1 mx-auto px-3 flex items-center"
+              >
+                <div
+                  class="flex flex-col items-center bg-primary-50/10 backdrop-blur-sm rounded-3xl w-full max-w-[526px] h-fit pt-20 pr-10 pl-10 pb-14"
+                >
+                  <div class="flex flex-col text-start gap-2 w-full">
+                    <h5 class="text-primary-50">理財APP</h5>
+                    <p class="text6-2 text-primary-50">
+                      連動帳戶與行動支付，讓 AI 提供您最好的理財建議
+                    </p>
+                  </div>
+                  <div
+                    class="w-full flex flex-wrap justify-start gap-2 mt-4 border-b border-b-primary-50 pb-10"
+                  >
+                    <div
+                      class="px-3 w-fit h-8 bg-primary-200 rounded-2xl flex justify-center items-center text-primary-700"
+                    >
+                      <h6>APP設計</h6>
+                    </div>
+                    <div
+                      class="px-3 w-fit h-8 bg-primary-200 rounded-2xl flex justify-center items-center text-primary-700"
+                    >
+                      <h6>iOS</h6>
+                    </div>
+                    <div
+                      class="px-4 w-fit h-8 bg-primary-200 rounded-2xl flex justify-center items-center text-primary-700"
+                    >
+                      <h6>React</h6>
+                    </div>
+                  </div>
+                  <button
+                    class="bg-primary-900 text-primary-50 flex justify-center gap-2 px-4 py-2 w-fit rounded-[5px] mt-10 cursor-pointer"
+                  >
+                    <p class="text6">完整介紹</p>
+                    <span class="material-symbols-outlined text-primary-50">
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </section>
 
+          <!-- 醫美診所官網 -->
           <section class="w-full flex flex-col">
             <div
-              class="h-[390px] bg-no-repeat bg-cover bg-bottom bg-[url('/src/assets/images/homepage-work3/homepage-work3-bg.png')] justify-items-center mb-6"
+              class="h-[390px] bg-no-repeat bg-cover bg-bottom bg-[url('/src/assets/images/homepage-work3/homepage-work3-bg.png')] justify-items-center mb-6 lg:h-200 lg:relative lg:mb-0"
             >
               <div class="w-full h-full bg-[#272727]/40"></div>
+              <!-- 行動版作品圖片 -->
               <img
-                class="-mt-[300px] h-[210px]"
+                class="-mt-[300px] h-[210px] lg:hidden"
                 src="./src/assets/images/homepage-work3/homepage-work3.png"
                 alt="醫美診所官網"
               />
+              <!-- 網頁版作品簡介 -->
+              <div
+                class="hidden h-full absolute bottom-0 justify-between items-center w-full max-w-[1296px] px-3 gap-[55px] lg:flex"
+              >
+                <div class="h-full flex flex-col justify-center">
+                  <img
+                    class="block w-auto"
+                    src="./src/assets/images/homepage-work3/homepage-work3.png"
+                    alt="醫美診所官網"
+                  />
+                </div>
+
+                <div
+                  class="flex-4/10 flex flex-col items-center bg-primary-50/10 backdrop-blur-[8px] rounded-3xl w-full max-w-[526px] h-fit pt-20 pr-10 pl-10 pb-14"
+                >
+                  <div class="flex flex-col text-start gap-2 w-full">
+                    <h5 class="text-primary-50">醫美診所官網</h5>
+                    <p class="text6-2 text-primary-50">
+                      永保青春的秘密，從粹究開始
+                    </p>
+                  </div>
+                  <div
+                    class="w-full flex flex-wrap justify-start gap-2 mt-4 border-b border-b-primary-50 pb-10"
+                  >
+                    <div
+                      class="px-3 w-fit h-8 bg-primary-200 rounded-2xl flex justify-center items-center text-primary-700"
+                    >
+                      <h6>網頁設計</h6>
+                    </div>
+                    <div
+                      class="px-3 w-fit h-8 bg-primary-200 rounded-2xl flex justify-center items-center text-primary-700"
+                    >
+                      <h6>響應式設計</h6>
+                    </div>
+                    <div
+                      class="px-4 w-fit h-8 bg-primary-200 rounded-2xl flex justify-center items-center text-primary-700"
+                    >
+                      <h6>ＷordPress</h6>
+                    </div>
+                  </div>
+                  <button
+                    class="bg-primary-900 text-primary-50 flex justify-center gap-2 px-4 py-2 w-fit rounded-[5px] mt-10 cursor-pointer"
+                  >
+                    <p class="text6">完整介紹</p>
+                    <span class="material-symbols-outlined text-primary-50">
+                      arrow_forward
+                    </span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="flex flex-col items-center">
+
+            <!-- 行動版作品簡介 -->
+            <div class="flex flex-col items-center lg:hidden">
               <div class="flex flex-col text-center gap-2">
                 <h5 class="text-primary-800">醫美診所官網</h5>
                 <p class="text6-2 text-primary-600">
