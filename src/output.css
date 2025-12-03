@@ -7,7 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --spacing: 0.25rem;
+    --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --radius-sm: 0.25rem;
@@ -21,6 +23,7 @@
     --color-primary-50: #FFFFFF;
     --color-primary-100: #FAFAFA;
     --color-primary-200: #F1F1F1;
+    --color-primary-300: #E9E9E9;
     --color-primary-400: #C1C1C1;
     --color-primary-500: #919191;
     --color-primary-600: #5B5B5B;
@@ -238,6 +241,9 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -286,6 +292,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-row {
+    flex-direction: row;
+  }
   .items-center {
     align-items: center;
   }
@@ -325,8 +334,14 @@
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
   .gap-18 {
     gap: calc(var(--spacing) * 18);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -344,6 +359,10 @@
     border-radius: var(--radius-sm);
   }
   .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
@@ -366,11 +385,26 @@
   .border-primary-400 {
     border-color: var(--color-primary-400);
   }
+  .border-primary-500 {
+    border-color: var(--color-primary-500);
+  }
+  .border-r-primary-500 {
+    border-right-color: var(--color-primary-500);
+  }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
   .bg-primary-50 {
     background-color: var(--color-primary-50);
   }
   .bg-primary-100 {
     background-color: var(--color-primary-100);
+  }
+  .bg-primary-500 {
+    background-color: var(--color-primary-500);
+  }
+  .bg-primary-700 {
+    background-color: var(--color-primary-700);
   }
   .bg-primary-800 {
     background-color: var(--color-primary-800);
@@ -405,6 +439,9 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
   }
@@ -438,8 +475,15 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .text-\[24px\] {
+    font-size: 24px;
+  }
   .text-\[28px\] {
     font-size: 28px;
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
@@ -455,6 +499,9 @@
   }
   .text-primary-50 {
     color: var(--color-primary-50);
+  }
+  .text-primary-300 {
+    color: var(--color-primary-300);
   }
   .text-primary-500 {
     color: var(--color-primary-500);
@@ -556,6 +603,11 @@
       gap: 318px;
     }
   }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -601,6 +653,11 @@
       width: 670px;
     }
   }
+  .lg\:w-\[1296px\] {
+    @media (width >= 64rem) {
+      width: 1296px;
+    }
+  }
   .lg\:max-w-\[1076px\] {
     @media (width >= 64rem) {
       max-width: 1076px;
@@ -609,6 +666,11 @@
   .lg\:grid-cols-2 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .lg\:flex-col {
+    @media (width >= 64rem) {
+      flex-direction: column;
     }
   }
   .lg\:flex-row {
@@ -661,6 +723,11 @@
   .lg\:px-10 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:px-78 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 78);
     }
   }
   .lg\:py-20 {

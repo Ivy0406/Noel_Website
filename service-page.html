@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>service</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <!-- header -->
+    <section class="w-full py-7">
+        <header class="bg-primary-50 h-14 flex justify-center items-center px-3">
+      <div
+        class="w-full flex justify-between items-center lg:w-[1296px] lg:justify-start md:gap-[318px]"
+      >
+        <a href="index.html"
+          ><img src="./src/assets/images/logo/logo.png" alt="Noel Logo"
+        /></a>
+        <nav class="hidden w-[480px] h-8 justify-between items-center md:flex">
+          <a class="nav-link group h-full px-2 py-1" href="index.html">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">首頁</span></a
+          >
+          <a class="nav-link group h-full px-2 py-1" href="#">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">作品集</span>
+          </a>
+          <a class="nav-link group h-full px-2 py-1" href="#">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">服務項目</span>
+          </a>
+          <a class="nav-link group h-full px-2 py-1" href="#">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">部落格</span>
+          </a>
+          <a class="nav-link group h-full px-2 py-1" href="#">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">聯絡我</span>
+        </a>
+        </nav>
+        <button class="cursor-pointer md:hidden">
+          <img src="./src/assets/images/icon/menu-icon.svg" alt="漢堡選單" />
+        </button>
+      </div>
+    </header>
+    </section>
+
+    <!-- main -->
+    <main>
+        <!-- 服務項目 -->
+         <section class="w-full flex justify-center py-20">
+        <div class="max-w-[1296px] flex flex-col gap-10">
+            <div class="flex justify-center gap-4">
+                <img class="md:hidden" src="./src/assets/images/icon/title deco-left-sm.svg" alt="標題裝飾線-行動版-左側">
+                <img class="hidden md:block" src="./src/assets/images/icon/title deco-left-lg.svg" alt="標題裝飾線-桌機版-左側">
+                </picture>
+                <h4 class="text-primary-700 tracking-[2.88px] md:hidden">服務項目</h4>
+                <p class="hidden h2-2 tracking-[3.84px] text-primary-700 md:block">服務項目</p>
+                <img class="md:hidden" src="./src/assets/images/icon/title deco-right-sm.svg" src="標題裝飾線-行動版-右側">
+                <img class="hidden md:block" src="./src/assets/images/icon/title deco-right-lg.svg" alt="標題裝飾線-桌機版-右側">
+            </div>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+                <div class="w-[306px] aspect-square bg-[url('/src/assets/images/service-bg/service-item-bg.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer">
+                    <img class="w-20 aspect-square" src="./src/assets/images/icon/service-item-visual.svg" alt="平面設計">
+                    <p class="text-primary-50 h4-2">平面設計</p>
+                </div>
+                <div class="w-[306px] aspect-square bg-[url('/src/assets/images/service-bg/service-item-bg.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer">
+                    <img class="w-20 aspect-square" src="./src/assets/images/icon/service-item-ui.svg" alt="UI設計">
+                    <p class="text-primary-50 h4-2">UI 設計</p>
+                </div>
+                <div class="w-[306px] aspect-square bg-[url('/src/assets/images/service-bg/service-item-bg.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer">
+                    <img class="w-20 aspect-square" src="./src/assets/images/icon/service-item-html&css.svg" alt="切版服務">
+                    <p class="text-primary-50 h4-2">切版服務</p>
+                </div>
+                <div class="w-[306px] aspect-square bg-[url('/src/assets/images/service-bg/service-item-bg.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer">
+                    <img class="w-20 aspect-square" src="./src/assets/images/icon/service-item-front-end.svg" alt="前端開發">
+                    <p class="text-primary-50 h4-2">前端開發</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!-- 服務流程 -->
+        <section class="w-full flex flex-col items-center justify-center gap-20 py-20 bg-primary-800 lg:px-78 px-3 lg:py-30">
+        <div class="max-w-[1296px] flex flex-col gap-10">
+            <div class="flex justify-center gap-4">
+                <img class="md:hidden" src="./src/assets/images/icon/title deco-left-sm.svg" alt="標題裝飾線-行動版-左側">
+                <img class="hidden md:block" src="./src/assets/images/icon/title deco-left-lg.svg" alt="標題裝飾線-桌機版-左側">
+                </picture>
+                <h4 class="text-primary-50 tracking-[2.88px] lg:hidden">服務流程</h4>
+                <p class="hidden h2-2 tracking-[3.84px] text-primary-50  lg:block">服務流程</p>
+                <img class="md:hidden" src="./src/assets/images/icon/title deco-right-sm.svg" src="標題裝飾線-行動版-右側">
+                <img class="hidden md:block" src="./src/assets/images/icon/title deco-right-lg.svg" alt="標題裝飾線-桌機版-右側">
+            </div>
+        </div>
+
+        <!-- 服務流程步驟 -->
+         <div class="flex flex-col gap-8">
+         <div class="flex flex-row gap-8  bg-primary-700 border-1 border-primary-500 py-6 px-8 ">
+            <h1 class="number-lg font-light  text-primary-500">1</h1>
+            <div class="flex flex-col gap-2">
+                <h3 class="lg:text-[28px]  text-[24px] text-primary-50 ">初步接洽</h3>
+                <div class=" lg:flex lg:flex-col hidden">
+                <p class="lg:fs-5 text-primary-300">透過表單或其他社群軟體與我聯絡 </p>
+                <p class="lg:fs-5 text-primary-300">根據難易度與複雜度，後續可能需要電話/線上討論</p>
+                </div>
+                <div class="flex lg:hidden">
+                <p class="lg:fs-5 text-primary-300">透過表單或其他社群軟體與我聯絡。根據難易度與複雜度，後續可能需要電話/線上討論 </p>
+                </div>
+            </div>
+         </div>
+         <div class="flex justify-center items-center">
+         <img src="./src/assets/images/icon/arrow-downward.svg" alt="" class="w-8 h-8 ">
+         </div>
+         <div class="flex flex-row gap-8  bg-primary-700 border-1 border-primary-500 py-6 px-8 ">
+            <h1 class="number-lg font-light  text-primary-500">2</h1>
+            <div class="flex flex-col gap-2">
+                <h3 class="lg:text-[28px]  text-[24px] text-primary-50 ">需求釐清</h3>
+                <div class="flex flex-col">
+                <p class="lg:fs-5 text-primary-300">透過訪談與問卷，解析客戶需求，並針對痛點給予實際建議</p>
+                </div>
+                
+            </div>
+         </div>
+         <div class="flex justify-center items-center">
+         <img src="./src/assets/images/icon/arrow-downward.svg" alt="" class="w-8 h-8 ">
+         </div>
+         <div class="flex flex-row gap-8  bg-primary-700 border-1 border-primary-500 py-6 px-8 ">
+            <h1 class="number-lg font-light  text-primary-500">3</h1>
+            <div class="flex flex-col gap-2">
+                <h3 class="lg:text-[28px]  text-[24px] text-primary-50 ">委託簽約</h3>
+                <div class=" lg:flex  lg:flex-col hidden">
+                <p class="lg:fs-5 text-primary-300">合約雙方用印後，即正式開始合作 </p>
+                <p class="lg:fs-5 text-primary-300">可提供發票或勞務報酬單，須支付 20% 訂金</p>
+                </div>
+                <div class="flex lg:hidden">
+                <p class="lg:fs-5 text-primary-300">合約雙方用印後，即正式開始合作
+可提供發票或勞務報酬單，須支付 20% 訂金</p>
+                </div>
+            </div>
+         </div>
+         <div class="flex justify-center items-center">
+         <img src="./src/assets/images/icon/arrow-downward.svg" alt="" class="w-8 h-8 ">
+         </div>
+         <div class="flex flex-row gap-8  bg-primary-700 border-1 border-primary-500 py-6 px-8 ">
+            <h1 class="number-lg font-light  text-primary-500">4</h1>
+            <div class="flex flex-col gap-2">
+                <h3 class="lg:text-[28px]  text-[24px] text-primary-50 ">版本呈現</h3>
+                <div class=" flex flex-col">
+                <p class="lg:fs-5 text-primary-300">根據合約內容進行設計或開發</p>
+                
+                </div>
+                
+            </div>
+         </div>
+         <div class="flex justify-center items-center">
+         <img src="./src/assets/images/icon/arrow-downward.svg" alt="" class="w-8 h-8 ">
+         </div>
+         <div class="flex flex-row gap-8  bg-primary-700 border-1 border-primary-500 py-6 px-8 ">
+            <h1 class="number-lg font-light  text-primary-500">5</h1>
+            <div class="flex flex-col gap-2">
+                <h3 class="lg:text-[28px]  text-[24px] text-primary-50 ">來回修正</h3>
+                <div class=" flex flex-col">
+                <p class="lg:fs-5 text-primary-300">依據合約規定之修正次數進行，次數計算以 mail 為準</p>
+                
+                </div>
+            </div>
+         </div>
+         <div class="flex justify-center items-center">
+         <img src="./src/assets/images/icon/arrow-downward.svg" alt="" class="w-8 h-8 ">
+         </div>
+         <div class="flex flex-row gap-8  bg-primary-700 border-1 border-primary-500 py-6 px-8 ">
+            <h1 class="number-lg font-light  text-primary-500">6</h1>
+            <div class="flex flex-col gap-2">
+                <h3 class="lg:text-[28px]  text-[24px] text-primary-50 ">終版確認</h3>
+                <div class=" flex flex-col">
+                <p class="lg:fs-5 text-primary-300">雙方同意後即為最終版</p>
+                
+                </div>
+            </div>
+         </div>
+         <div class="flex justify-center items-center">
+         <img src="./src/assets/images/icon/arrow-downward.svg" alt="" class="w-8 h-8 ">
+         </div>
+         <div class="flex flex-row gap-8  bg-primary-700 border-1 border-primary-500 py-6 px-8 ">
+            <h1 class="number-lg font-light  text-primary-500">7</h1>
+            <div class="flex flex-col gap-2">
+                <h3 class="lg:text-[28px]  text-[24px] text-primary-50 ">結案</h3>
+                <div class=" flex flex-col">
+                <p class="lg:fs-5 text-primary-300">客戶簽署驗收單，並於約定日期支付尾款</p>
+                
+                </div>
+            </div>
+         </div>
+         
+         
+
+         </div>
+        </section>
+        <!-- 價格表 -->
+        <!-- 客戶案例 -->
+        <!-- 常見問題 -->
+    </main>
+     <!-- footer -->
+    <section class="w-full">
+        <footer
+      class="bg-[url(/src/assets/images/footer/footer-bg-sm.png)] py-10 px-3 flex justify-center "
+      alt="表尾背景圖-行動版"
+    >
+      <div class="flex flex-col justify-center items-center gap-10 md:flex-row md:w-[1296px] md:justify-between">
+        <div
+          class="flex flex-col gap-6 justify-center items-center md:items-start"
+        >
+          <div class="w-30 h-[54px]">
+            <img
+              class="object-center w-full h-full"
+              src="./src/assets/images/logo/logo.svg"
+              alt="Noel_Logo"
+            />
+          </div>
+
+          <div class="flex flex-col gap-1 text6-2 text-primary-700">
+            <p>若有數位產品設計和開發相關問題</p>
+            <p>歡迎填寫表單，或直接與我聯絡！</p>
+          </div>
+          <p class="text6-2 text-primary-500">service@hexschool.com</p>
+        </div>
+
+        <nav class="flex flex-col gap-6 w-[306px]">
+          <div class="h-16 bg-primary-900 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/list.svg"
+                alt="填寫表單"
+              />
+              <p class="text-primary-50 text5">填寫表單</p>
+            </a>
+          </div>
+          <div class="h-16 bg-primary-50 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/instagram.svg"
+                alt="Instagram"
+              />
+              <p class="text-primary-700 text5-2">hexschool_demo</p>
+            </a>
+          </div>
+          <div class="h-16 bg-primary-50 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/facebook.svg"
+                alt="Facebook"
+              />
+              <p class="text-primary-700 text5-2">hexschoolTW</p>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+       
+
+    </section>
+    
+</body>
+</html>
