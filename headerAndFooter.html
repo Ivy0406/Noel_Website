@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header & Footer</title>
     <link href="./src/output.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Tourney:wght@400&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+  </head>
+  <body>
     <header class="bg-primary-50 h-14 flex justify-center items-center px-3">
       <div
         class="w-full flex justify-between items-center md:w-[1296px] md:justify-start md:gap-[318px]"
@@ -60,5 +60,69 @@
         </button>
       </div>
     </header>
-</body>
+
+    <footer
+      class="bg-[url(/src/assets/images/footer/footer-bg-sm.png)] py-10 px-3 flex justify-center "
+      alt="表尾背景圖-行動版"
+    >
+      <div class="flex flex-col justify-center items-center gap-10 md:flex-row md:w-[1296px] md:justify-between">
+        <div
+          class="flex flex-col gap-6 justify-center items-center md:items-start"
+        >
+          <div class="w-30 h-[54px]">
+            <img
+              class="object-center w-full h-full"
+              src="./src/assets/images/logo/logo.svg"
+              alt="Noel_Logo"
+            />
+          </div>
+
+          <div class="flex flex-col gap-1 text6-2 text-primary-700">
+            <p>若有數位產品設計和開發相關問題</p>
+            <p>歡迎填寫表單，或直接與我聯絡！</p>
+          </div>
+          <p class="text6-2 text-primary-500">service@hexschool.com</p>
+        </div>
+
+        <nav class="flex flex-col gap-6 w-[306px]">
+          <div class="h-16 bg-primary-900 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/list.svg"
+                alt="填寫表單"
+              />
+              <p class="text-primary-50 text5">填寫表單</p>
+            </a>
+          </div>
+          <div class="h-16 bg-primary-50 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/instagram.svg"
+                alt="Instagram"
+              />
+              <p class="text-primary-700 text5-2">hexschool_demo</p>
+            </a>
+          </div>
+          <div class="h-16 bg-primary-50 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/facebook.svg"
+                alt="Facebook"
+              />
+              <p class="text-primary-700 text5-2">hexschoolTW</p>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>
