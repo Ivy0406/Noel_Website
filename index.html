@@ -132,7 +132,7 @@
           </nav>
         </div>
       </section>
-      <section class="pt-10 pb-20">
+      <section class="pt-10 pb-20 lg:pb-0">
         <div class="flex justify-center gap-4 mb-10">
           <img
             class="lg:hidden"
@@ -182,7 +182,7 @@
                 </div>
 
                 <div
-                  class="flex-4/10 flex flex-col items-center bg-primary-50/10 backdrop-blur-[8px] rounded-3xl w-full max-w-[526px] h-fit pt-20 pr-10 pl-10 pb-14"
+                  class="flex-4/10 flex flex-col items-center bg-primary-50/10 backdrop-blur-sm rounded-3xl w-full max-w-[526px] h-fit pt-20 pr-10 pl-10 pb-14"
                 >
                   <div class="flex flex-col text-start gap-2 w-full">
                     <h5 class="text-primary-50">星際旅行訂票平台</h5>
@@ -296,7 +296,7 @@
             </div>
             <!-- 網頁版 -->
             <div
-              class="bg-no-repeat bg-cover bg-bottom bg-[url('/src/assets/images/homepage-work2/homepage-work2-lg.png')] justify-items-center h-200 flex justify-start relative"
+              class="hidden bg-no-repeat bg-cover bg-bottom bg-[url('/src/assets/images/homepage-work2/homepage-work2-lg.png')] justify-items-center h-200 justify-start relative lg:flex"
             >
               <div class="w-1/2 h-full bg-[#0A101380]/50 absolute z-0"></div>
               <div
@@ -368,7 +368,7 @@
                 </div>
 
                 <div
-                  class="flex-4/10 flex flex-col items-center bg-primary-50/10 backdrop-blur-[8px] rounded-3xl w-full max-w-[526px] h-fit pt-20 pr-10 pl-10 pb-14"
+                  class="flex-4/10 flex flex-col items-center bg-primary-50/10 backdrop-blur-sm rounded-3xl w-full max-w-[526px] h-fit pt-20 pr-10 pl-10 pb-14"
                 >
                   <div class="flex flex-col text-start gap-2 w-full">
                     <h5 class="text-primary-50">醫美診所官網</h5>
@@ -442,6 +442,94 @@
               </button>
             </div>
           </section>
+        </div>
+      </section>
+
+      <section
+        class="w-full h-[881px] flex justify-center py-30 lg:bg-[url('/src/assets/images/homepage-service/homepage-services-bg.png')]"
+      >
+        <div class="max-w-[1296px] flex flex-col gap-20">
+          <div class="flex justify-center gap-4">
+            <img
+              class="md:hidden"
+              src="./src/assets/images/icon/title deco-left-sm.svg"
+              alt="標題裝飾線-行動版-左側"
+            />
+            <img
+              class="hidden md:block"
+              src="./src/assets/images/icon/title deco-left-lg.svg"
+              alt="標題裝飾線-桌機版-左側"
+            />
+            <h4 class="text-primary-700 tracking-[2.88px] md:hidden">
+              服務項目
+            </h4>
+            <p class="hidden h2-2 tracking-[3.84px] text-primary-700 md:block">
+              服務項目
+            </p>
+            <img
+              class="md:hidden"
+              src="./src/assets/images/icon/title deco-right-sm.svg"
+              src="標題裝飾線-行動版-右側"
+            />
+            <img
+              class="hidden md:block"
+              src="./src/assets/images/icon/title deco-right-lg.svg"
+              alt="標題裝飾線-桌機版-右側"
+            />
+          </div>
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div
+              class="w-[306px] aspect-square bg-[url('/src/assets/images/service-bg/service-item-bg.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer"
+            >
+              <img
+                class="w-20 aspect-square"
+                src="./src/assets/images/icon/service-item-visual.svg"
+                alt="平面設計"
+              />
+              <p class="text-primary-50 h4-2">平面設計</p>
+            </div>
+            <div
+              class="w-[306px] aspect-square bg-[url('/src/assets/images/service-bg/service-item-bg.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer"
+            >
+              <img
+                class="w-20 aspect-square"
+                src="./src/assets/images/icon/service-item-ui.svg"
+                alt="UI設計"
+              />
+              <p class="text-primary-50 h4-2">UI 設計</p>
+            </div>
+            <div
+              class="w-[306px] aspect-square bg-[url('/src/assets/images/service-bg/service-item-bg.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer"
+            >
+              <img
+                class="w-20 aspect-square"
+                src="./src/assets/images/icon/service-item-html&css.svg"
+                alt="切版服務"
+              />
+              <p class="text-primary-50 h4-2">切版服務</p>
+            </div>
+            <div
+              class="w-[306px] aspect-square bg-[url('/src/assets/images/service-bg/service-item-bg.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer"
+            >
+              <img
+                class="w-20 aspect-square"
+                src="./src/assets/images/icon/service-item-front-end.svg"
+                alt="前端開發"
+              />
+              <p class="text-primary-50 h4-2">前端開發</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-between items-center">
+            <h3 class="text-primary-700">想要合作或瞭解更多？</h3>
+            <button
+              class="bg-primary-900 text-primary-50 flex justify-center gap-2 px-8 py-4 w-fit min-w-[276px] rounded-[5px] mt-10 cursor-pointer"
+            >
+              <p class="text6">詳細內容與合作流程</p>
+              <span class="material-symbols-outlined text-primary-50">
+                arrow_forward
+              </span>
+            </button>
+          </div>
         </div>
       </section>
     </main>
