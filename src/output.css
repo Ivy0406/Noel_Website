@@ -179,23 +179,8 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
-  .-right-4 {
-    right: calc(var(--spacing) * -4);
-  }
-  .-right-5 {
-    right: calc(var(--spacing) * -5);
-  }
-  .-right-6 {
-    right: calc(var(--spacing) * -6);
-  }
   .-right-7 {
     right: calc(var(--spacing) * -7);
-  }
-  .-right-8 {
-    right: calc(var(--spacing) * -8);
-  }
-  .-right-10 {
-    right: calc(var(--spacing) * -10);
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -203,23 +188,8 @@
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
-  .bottom-0\.5 {
-    bottom: calc(var(--spacing) * 0.5);
-  }
-  .bottom-1 {
-    bottom: calc(var(--spacing) * 1);
-  }
-  .bottom-\[2px\] {
-    bottom: 2px;
-  }
   .bottom-\[3px\] {
     bottom: 3px;
-  }
-  .-left-1 {
-    left: calc(var(--spacing) * -1);
-  }
-  .-left-2 {
-    left: calc(var(--spacing) * -2);
   }
   .-left-4 {
     left: calc(var(--spacing) * -4);
@@ -227,14 +197,8 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
-  }
   .z-0 {
     z-index: 0;
-  }
-  .z-1 {
-    z-index: 1;
   }
   .z-2 {
     z-index: 2;
@@ -278,9 +242,6 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
-  .w-\[119px\] {
-    width: 119px;
-  }
   .w-\[152px\] {
     width: 152px;
   }
@@ -289,9 +250,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .flex-1 {
-    flex: 1;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -317,9 +275,6 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
-  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -343,20 +298,11 @@
   .bg-primary-50 {
     background-color: var(--color-primary-50);
   }
-  .px-1 {
-    padding-inline: calc(var(--spacing) * 1);
-  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
-  }
-  .px-4 {
-    padding-inline: calc(var(--spacing) * 4);
-  }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
