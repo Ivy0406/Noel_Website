@@ -142,7 +142,7 @@
         <div class="w-full grid lg:grid-cols-2 grid-cols-1 gap-12 lg:gap-20">
 
         <div id="modal" class="w-full flex flex-col gap-4 cursor-pointer hover:shadow-lg transition-shadow">
-            <img src="./src/assets/images/work-image/work-image1.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image1.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -158,7 +158,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image2.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image2.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -174,7 +174,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image3.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image3.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -190,7 +190,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image4.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image4.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -206,7 +206,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image5.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image5.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -222,7 +222,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4">
-            <img src="./src/assets/images/work-image/work-image6.png" alt="" class="w-full lg:h-[400px] h-[224px] rounded-md ">
+            <img src="./src/assets/images/work-image/work-image6.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -240,24 +240,26 @@
 
         <!-- 頁數 -->
          <div class="flex gap-4">
-            <button class="w-10 h-10 bg-primary-800 text-primary-50 lg:text-[24px]  flex items-center justify-center rounded-sm">1</buttton>
-            <button class="w-10 h-10 bg-primary-50 text-primary-800 lg:text-[24px]  flex items-center justify-center rounded-sm">2</buttton>
-            <button class="w-10 h-10 bg-primary-50 text-primary-800 lg:text-[24px]  flex items-center justify-center rounded-sm">3</buttton>
+            <button class="w-10 h-10 bg-primary-800 text-primary-50 lg:text-[24px]  flex items-center justify-center rounded-sm cursor-pointer">1</buttton>
+            <button class="w-10 h-10 bg-primary-50 text-primary-800 lg:text-[24px]  flex items-center justify-center rounded-sm cursor-pointer">2</buttton>
+            <button class="w-10 h-10 bg-primary-50 text-primary-800 lg:text-[24px]  flex items-center justify-center rounded-sm cursor-pointer">3</buttton>
          </div>
 
       </section>
 
-      <!-- 跳出視窗 -->
-       <section id="overlay" class="fixed inset-0 hidden bg-black/50 items-center justify-center">
+      <!-- 彈跳視窗 -->
+       <section id="overlay" class="overflow-y-scroll w-full  fixed inset-0 flex bg-black/50 items-start justify-center lg:py-12 py-3">
        <div class="lg:max-w-[1076px] max-w-[351px] rounded-2xl bg-primary-50 ">
       <!-- 叉叉區塊 -->
       <div class="w-full pt-8 px-8 lg:px-10 flex justify-end">
         <img
           src="./src/assets/images/icon/close-icon.svg"
           alt="close"
-          class="w-6 h-6"
+          class="w-6 h-6 cursor-pointer"
+          id="closeBtn"
+          
         />
-      </section>
+      </div>
       <section class="flex flex-col lg:gap-10 gap-6 py-10">
         <!-- 標題 -->
         <div class="flex flex-col items-center justify-center gap-2">
@@ -309,7 +311,7 @@
         </div>
       </section>
       <!-- picture-area -->
-      <section class="w-full bg-primary-100 flex flex-col gap-8 px-4 lg:px-0 pb-10 lg:pb-20">
+      <section class="w-full bg-primary-100 flex flex-col gap-8 px-4 lg:px-0 pb-10 lg:py-20 rounded-2xl">
         <div class="flex flex-col justify-center items-center gap-4 lg:gap-6">
             <img src="./src/assets/images/modal-image/modal-image1.png" alt="" class="rounded-[8px] lg:rpunded-[20px]">
             <div class="flex flex-col gap-4 justify-center items-center">
@@ -399,5 +401,6 @@
        
 
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
