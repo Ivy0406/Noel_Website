@@ -55,14 +55,14 @@
             <span class="text6-2 group-hover:font-bold">聯絡我</span>
           </a>
         </nav>
-        <button class="cursor-pointer md:hidden">
+        <button class="cursor-pointer md:hidden" id="menu-btn">
           <img src="./src/assets/images/icon/menu-icon.svg" alt="漢堡選單" />
         </button>
       </div>
-      <div class="w-full z-10">
+      <div class="hidden w-full z-10" id="menu-list">
         <ul
           class="text-primary-700 text-center leading-10 font-semibold"
-          id="menu-list"
+          
         >
           <li class="bg-primary-50">
             <a class="nav-link group h-full px-2 py-1" href="index.html">
@@ -179,5 +179,6 @@
         </nav>
       </div>
     </footer>
+    <script src="./src/header.js"></script>
   </body>
 </html>
