@@ -15,7 +15,9 @@
     />
   </head>
   <body>
-    <header class="w-full max-w-[1920px] bg-primary-50 h-14 flex justify-center items-center px-3">
+    <header
+      class="w-full max-w-[1920px] bg-primary-50 h-14 flex justify-center items-center px-3"
+    >
       <div
         class="w-full flex justify-between items-center md:w-[1296px] md:justify-start md:gap-[318px]"
       >
@@ -446,7 +448,7 @@
       </section>
 
       <section
-        class="w-full h-auto min-h-[881px] flex justify-center py-30 lg:bg-[url('/src/assets/images/homepage-service/homepage-services-bg.png')]"
+        class="w-full h-auto min-h-[881px] flex justify-center py-30 bg-primary-100 lg:bg-[url('/src/assets/images/homepage-service/homepage-services-bg.png')]"
       >
         <div class="max-w-[1296px] flex flex-col gap-20">
           <div class="flex justify-center gap-4">
@@ -532,11 +534,9 @@
           </div>
         </div>
       </section>
-      <section
-        class="w-full h-auto min-h-[881px] flex justify-center py-30 lg:bg-[url('/src/assets/images/homepage-service/homepage-services-bg.png')]"
-      >
-        <div class="max-w-[1296px] flex flex-col gap-20">
-          <div class="flex justify-center gap-4">
+      <section class="w-full h-auto min-h-[881px] flex justify-center py-30">
+        <div class="max-w-[1296px] flex flex-col gap-20 items-center">
+          <div class="w-fit max-w-[372px] flex justify-center gap-4">
             <img
               class="md:hidden"
               src="./src/assets/images/icon/title deco-left-sm.svg"
@@ -547,10 +547,12 @@
               src="./src/assets/images/icon/title deco-left-lg.svg"
               alt="標題裝飾線-桌機版-左側"
             />
-            <h4 class="text-primary-700 tracking-[2.88px] md:hidden">
+            <h4 class="text-primary-700 tracking-[2px] text-center md:hidden">
               精選文章
             </h4>
-            <p class="hidden h2-2 tracking-[3.84px] text-primary-700 md:block">
+            <p
+              class="hidden h2-2 tracking-[3px] text-primary-700 text-center md:block"
+            >
               精選文章
             </p>
             <img
@@ -564,43 +566,76 @@
               alt="標題裝飾線-桌機版-右側"
             />
           </div>
-          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-4">
-            <div class="w-[351px] flex flex-col gap-4">
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+            <div class="w-[351px] flex flex-col gap-4 xl:w-[416px]">
               <div
-                class="w-[351px] aspect-[1.5/1] bg-[url('/src/assets/images/article-image/article-image1.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer"
-              >
-              </div>
+                class="w-full aspect-[1.5/1] bg-no-repeat bg-cover bg-[url('/src/assets/images/article-image/article-image1.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer"
+              ></div>
               <div class="flex flex-col gap-4 items-center">
-                <h5 class="font-semibold text-primary-700 max-w-[335px]">Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)</h5>
-                <div class="w-full max-w-[335px] flex justify-between">
-                  <p class="w-fit bg-primary-200 py-1 px-3 rounded-2xl text-primary-700">UI/UX 新知</p>
-                  <p class="text-primary-700 flex items-center"><span>2024/02/10</span></p>
+                <h5
+                  class="font-semibold text-primary-700 max-w-[335px] xl:max-w-100"
+                >
+                  Vision Pro 登場！Vision Pro UI/UX 設計重點大公開 (上)
+                </h5>
+                <div
+                  class="w-full max-w-[335px] flex justify-between xl:max-w-100"
+                >
+                  <p
+                    class="w-fit bg-primary-200 py-1 px-3 rounded-2xl text-primary-700"
+                  >
+                    UI/UX 新知
+                  </p>
+                  <p class="text-primary-700 flex items-center">
+                    <span>2024/02/10</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w-[351px] flex flex-col gap-4 xl:w-[416px]">
+              <div
+                class="w-full aspect-[1.5/1] bg-no-repeat bg-center bg-cover bg-[url('/src/assets/images/article-image/article-image2.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer"
+              ></div>
+              <div class="flex flex-col gap-4 items-center">
+                <h5
+                  class="font-semibold text-primary-700 max-w-[335px] xl:max-w-100"
+                >
+                  給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)
+                </h5>
+                <div
+                  class="w-full max-w-[335px] flex justify-between xl:max-w-100"
+                >
+                  <p
+                    class="w-fit bg-primary-200 py-1 px-3 rounded-2xl text-primary-700"
+                  >
+                    UI/UX 新知
+                  </p>
+                  <p class="text-primary-700 flex items-center">
+                    <span>2023/10/18</span>
+                  </p>
                 </div>
               </div>
             </div>
             <div class="w-[351px] flex flex-col gap-4">
               <div
-                class="w-[351px] aspect-[1.5/1] bg-center bg-contain bg-[url('/src/assets/images/article-image/article-image2.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer"
-              >
-              </div>
+                class="w-[351px] aspect-[1.5/1] bg-center bg-[url('/src/assets/images/article-image/article-image3.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer xl:w-[416px]"
+              ></div>
               <div class="flex flex-col gap-4 items-center">
-                <h5 class="font-semibold text-primary-700 max-w-[335px]">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (下)</h5>
-                <div class="w-full max-w-[335px] flex justify-between">
-                  <p class="w-fit bg-primary-200 py-1 px-3 rounded-2xl text-primary-700">UI/UX 新知</p>
-                  <p class="text-primary-700 flex items-center"><span>2023/10/18</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="w-[351px] flex flex-col gap-4">
-              <div
-                class="w-[351px] aspect-[1.5/1] bg-center bg-[url('/src/assets/images/article-image/article-image3.png')] flex flex-col justify-center items-center gap-6 rounded-2xl cursor-pointer"
-              >
-              </div>
-              <div class="flex flex-col gap-4 items-center">
-                <h5 class="font-semibold text-primary-700 max-w-[335px]">給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)</h5>
-                <div class="w-full max-w-[335px] flex justify-between">
-                  <p class="w-fit bg-primary-200 py-1 px-3 rounded-2xl text-primary-700">UI/UX 新知</p>
-                  <p class="text-primary-700 flex items-center"><span>2023/10/18</span></p>
+                <h5
+                  class="font-semibold text-primary-700 max-w-[335px] xl:max-w-100"
+                >
+                  給設計師和工程師的 Figma-Dev Mode 開發模式使用指南 (上)
+                </h5>
+                <div
+                  class="w-full max-w-[335px] flex justify-between xl:max-w-100"
+                >
+                  <p
+                    class="w-fit bg-primary-200 py-1 px-3 rounded-2xl text-primary-700"
+                  >
+                    UI/UX 新知
+                  </p>
+                  <p class="text-primary-700 flex items-center">
+                    <span>2023/10/18</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -615,10 +650,12 @@
       </section>
     </main>
     <footer
-      class="bg-[url(/src/assets/images/footer/footer-bg-sm.png)] py-10 px-3 flex justify-center "
+      class="bg-[url(/src/assets/images/footer/footer-bg-sm.png)] py-10 px-3 flex justify-center"
       alt="表尾背景圖-行動版"
     >
-      <div class="flex flex-col justify-center items-center gap-10 md:flex-row md:w-[1296px] md:justify-between">
+      <div
+        class="flex flex-col justify-center items-center gap-10 md:flex-row md:w-[1296px] md:justify-between"
+      >
         <div
           class="flex flex-col gap-6 justify-center items-center md:items-start"
         >
