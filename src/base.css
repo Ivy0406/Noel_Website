@@ -23,7 +23,7 @@
   }
 
   h2 {
-    @apply text-[32px] font-bold tracking-[12%];
+    @apply text-[32px] font-bold tracking-[3.84px];
     font-family: 'Noto Sans', sans-serif;
   }
 
@@ -38,7 +38,7 @@
   }
 
   h4 {
-    @apply text-[24px] font-bold tracking-[12%];
+    @apply text-[24px] font-bold tracking-[2.88px];
     font-family: 'Noto Sans', sans-serif;
   }
 
