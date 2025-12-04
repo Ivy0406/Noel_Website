@@ -233,6 +233,9 @@
   .order-2 {
     order: 2;
   }
+  .m-auto {
+    margin: auto;
+  }
   .mx-auto {
     margin-inline: auto;
   }
