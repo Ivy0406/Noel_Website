@@ -19,7 +19,7 @@
   }
 
   .title-button{
-    @apply whitespace-nowrap p-1 text-primary-600 text-[16px] hover:text-primary-800 border-b-2 border-primary-50 hover:border-primary-800 active:border-primary-800;
+    @apply whitespace-nowrap p-1 text-primary-600 text-[16px] hover:text-primary-800 border-b-2 border-primary-100 hover:border-primary-800 active:border-primary-800;
   }
 
   .single-line-ellipsis {
