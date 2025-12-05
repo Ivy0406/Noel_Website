@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header & Footer</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Tourney:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="w-full bg-primary-50 h-14 flex flex-col items-center pt-[11px] md:justify-center md:pt-0"
+    >
+      <div
+        class="w-full flex justify-between items-center px-3 md:justify-start md:gap-[318px] md:max-w-[1296px]"
+      >
+        <a href="./index.html"
+          ><img
+            class="w-[74px] h-[33px]"
+            src="./src/assets/images/logo/logo.svg"
+            alt="Noel Logo"
+        /></a>
+        <nav class="hidden w-[480px] h-8 justify-between items-center md:flex">
+          <a class="nav-link group h-full px-2 py-1" href="index.html">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">首頁</span></a
+          >
+          <a class="nav-link group h-full px-2 py-1" href="./porfolioPage.html">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">作品集</span>
+          </a>
+          <a class="nav-link group h-full px-2 py-1" href="./servicePage.html">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">服務項目</span>
+          </a>
+          <a class="nav-link group h-full px-2 py-1" href="./blogPage.html">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">部落格</span>
+          </a>
+          <a class="nav-link group h-full px-2 py-1" href="#footer">
+            <span class="nav-mark top-0 left-0 border-t border-l"></span>
+            <span class="nav-mark top-0 right-0 border-t border-r"></span>
+            <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
+            <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
+            <span class="text6-2 group-hover:font-bold">聯絡我</span>
+          </a>
+        </nav>
+        <button class="cursor-pointer md:hidden" id="menu-btn">
+          <img
+            src="./src/assets/images/icon/menu-icon.svg"
+            alt="漢堡選單"
+            id="menu-icon"
+          />
+        </button>
+      </div>
+      <div class="hidden w-full z-10" id="menu-list">
+        <ul class="text-primary-700 text-center leading-10 font-semibold">
+          <li class="bg-primary-50">
+            <a class="nav-link group h-full px-2 py-1" href="index.html">
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">首頁</span>
+            </a>
+          </li>
+          <li class="bg-primary-50">
+            <a class="nav-link group h-full px-2 py-1" href="./porfolioPage.html">
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">作品集</span>
+            </a>
+          </li>
+          <li class="bg-primary-50">
+            <a
+              class="nav-link group h-full px-2 py-1"
+              href="./servicePage.html"
+            >
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">服務項目</span>
+            </a>
+          </li>
+          <li class="bg-primary-50">
+            <a class="nav-link group h-full px-2 py-1" href="./blogPage.html">
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">部落格</span>
+            </a>
+          </li>
+          <li class="bg-primary-50">
+            <a class="nav-link group h-full px-2 py-1" href="#footer">
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">聯絡我</span>
+            </a>
+          </li>
+          <li class="h-dvh bg-primary-900/70"></li>
+        </ul>
+      </div>
+    </header>
+
+    <footer
+      class="bg-[url(/src/assets/images/footer/footer-bg-sm.png)] py-10 px-3 flex justify-center md:bg-[url(/src/assets/images/footer/footer-bg-lg.png)]"
+      alt="表尾背景圖"
+      id="footer"
+    >
+      <div
+        class="flex flex-col justify-center items-center gap-10 md:flex-row md:w-[1296px] md:justify-between"
+      >
+        <div
+          class="flex flex-col gap-6 justify-center items-center md:items-start"
+        >
+          <div class="w-30 h-[54px]">
+            <img
+              class="object-center w-full h-full"
+              src="./src/assets/images/logo/logo.svg"
+              alt="Noel_Logo"
+            />
+          </div>
+
+          <div class="flex flex-col gap-1 text6-2 text-primary-700">
+            <p>若有數位產品設計和開發相關問題</p>
+            <p>歡迎填寫表單，或直接與我聯絡！</p>
+          </div>
+          <p class="text6-2 text-primary-500">service@hexschool.com</p>
+        </div>
+
+        <nav class="flex flex-col gap-6 w-[306px]">
+          <div class="h-16 bg-primary-900 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/list.svg"
+                alt="填寫表單"
+              />
+              <p class="text-primary-50 text5">填寫表單</p>
+            </a>
+          </div>
+          <div class="h-16 bg-primary-50 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/instagram.svg"
+                alt="Instagram"
+              />
+              <p class="text-primary-700 text5-2">hexschool_demo</p>
+            </a>
+          </div>
+          <div class="h-16 bg-primary-50 rounded-lg border border-primary-400">
+            <a
+              class="w-full h-full cursor-pointer flex justify-start items-center gap-2 px-6"
+            >
+              <img
+                class="w-14 aspect-square"
+                src="./src/assets/images/icon/facebook.svg"
+                alt="Facebook"
+              />
+              <p class="text-primary-700 text5-2">hexschoolTW</p>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <script src="./src/header.js"></script>
+  </body>
+</html>
