@@ -7,11 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-black: #000;
     --spacing: 0.25rem;
-    --text-3xl: 1.875rem;
-    --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-semibold: 600;
@@ -294,11 +291,17 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .aspect-\[1\.5\/1\] {
     aspect-ratio: 1.5/1;
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
+  }
+  .h-0 {
+    height: calc(var(--spacing) * 0);
   }
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
@@ -365,6 +368,9 @@
   }
   .min-h-\[881px\] {
     min-height: 881px;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -453,14 +459,23 @@
   .flex-1 {
     flex: 1;
   }
+  .flex-4 {
+    flex: 4;
+  }
   .flex-4\/10 {
     flex: calc(4/10 * 100%);
+  }
+  .border-collapse {
+    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -602,6 +617,9 @@
   .bg-\[\#272727\]\/40 {
     background-color: color-mix(in oklab, #272727 40%, transparent);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-black\/50 {
     background-color: color-mix(in srgb, #000 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -644,6 +662,30 @@
       background-color: color-mix(in oklab, var(--color-primary-900) 70%, transparent);
     }
   }
+  .bg-\[url\(\'\.\.\/src\/assets\/images\/article-image\/article-image1\.png\'\)\] {
+    background-image: url('../src/assets/images/article-image/article-image1.png');
+  }
+  .bg-\[url\(\'\.\.\/src\/assets\/images\/article-image\/article-image2\.png\'\)\] {
+    background-image: url('../src/assets/images/article-image/article-image2.png');
+  }
+  .bg-\[url\(\'\.\.\/src\/assets\/images\/article-image\/article-image3\.png\'\)\] {
+    background-image: url('../src/assets/images/article-image/article-image3.png');
+  }
+  .bg-\[url\(\'\.\.\/src\/assets\/images\/homepage-work1\/homepage-work1-bg\.png\'\)\] {
+    background-image: url('../src/assets/images/homepage-work1/homepage-work1-bg.png');
+  }
+  .bg-\[url\(\'\.\.\/src\/assets\/images\/homepage-work2\/homepage-work2-lg\.png\'\)\] {
+    background-image: url('../src/assets/images/homepage-work2/homepage-work2-lg.png');
+  }
+  .bg-\[url\(\'\.\.\/src\/assets\/images\/homepage-work2\/homepage-work2-sm\.png\'\)\] {
+    background-image: url('../src/assets/images/homepage-work2/homepage-work2-sm.png');
+  }
+  .bg-\[url\(\'\.\.\/src\/assets\/images\/homepage-work3\/homepage-work3-bg\.png\'\)\] {
+    background-image: url('../src/assets/images/homepage-work3/homepage-work3-bg.png');
+  }
+  .bg-\[url\(\'\.\.\/src\/assets\/images\/service-bg\/service-item-bg\.png\'\)\] {
+    background-image: url('../src/assets/images/service-bg/service-item-bg.png');
+  }
   .bg-\[url\(\'\/src\/assets\/images\/article-image\/article-image1\.png\'\)\] {
     background-image: url('/src/assets/images/article-image/article-image1.png');
   }
@@ -670,6 +712,9 @@
   }
   .bg-\[url\(\'\/src\/assets\/images\/service-bg\/service-item-bg\.png\'\)\] {
     background-image: url('/src/assets/images/service-bg/service-item-bg.png');
+  }
+  .bg-\[url\(\.\.\/src\/assets\/images\/footer\/footer-bg-sm\.png\)\] {
+    background-image: url(../src/assets/images/footer/footer-bg-sm.png);
   }
   .bg-\[url\(\/src\/assets\/images\/footer\/footer-bg-sm\.png\)\] {
     background-image: url(/src/assets/images/footer/footer-bg-sm.png);
@@ -851,12 +896,23 @@
   .text-primary-800 {
     color: var(--color-primary-800);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .backdrop-blur-sm {
     --tw-backdrop-blur: blur(var(--blur-sm));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -956,6 +1012,11 @@
   .md\:gap-\[318px\] {
     @media (width >= 48rem) {
       gap: 318px;
+    }
+  }
+  .md\:bg-\[url\(\.\.\/src\/assets\/images\/footer\/footer-bg-lg\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../src/assets/images/footer/footer-bg-lg.png);
     }
   }
   .md\:bg-\[url\(\/src\/assets\/images\/footer\/footer-bg-lg\.png\)\] {
@@ -1575,6 +1636,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-backdrop-blur {
   syntax: "*";
   inherits: false;
@@ -1646,6 +1712,7 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
