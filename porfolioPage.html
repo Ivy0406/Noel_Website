@@ -9,12 +9,17 @@
   <body>
     <!-- header -->
     <section class="w-full py-7">
-        <header class="bg-primary-50 h-14 flex justify-center items-center px-3">
+        <header
+      class="w-full bg-primary-50 h-14 flex flex-col items-center pt-[11px] md:justify-center md:pt-0"
+    >
       <div
-        class="w-full flex justify-between items-center max-w-[1296px] lg:justify-start md:gap-[318px]"
+        class="w-full flex justify-between items-center px-3 md:justify-start md:gap-[318px] md:max-w-[1296px]"
       >
-        <a href="index.html"
-          ><img src="./src/assets/images/logo/logo.png" alt="Noel Logo"
+        <a href="./index.html"
+          ><img
+            class="w-[74px] h-[33px]"
+            src="./src/assets/images/logo/logo.svg"
+            alt="Noel Logo"
         /></a>
         <nav class="hidden w-[480px] h-8 justify-between items-center md:flex">
           <a class="nav-link group h-full px-2 py-1" href="index.html">
@@ -24,38 +29,95 @@
             <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
             <span class="text6-2 group-hover:font-bold">首頁</span></a
           >
-          <a class="nav-link group h-full px-2 py-1" href="#">
+          <a class="nav-link group h-full px-2 py-1" href="./porfolioPage.html">
             <span class="nav-mark top-0 left-0 border-t border-l"></span>
             <span class="nav-mark top-0 right-0 border-t border-r"></span>
             <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
             <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
             <span class="text6-2 group-hover:font-bold">作品集</span>
           </a>
-          <a class="nav-link group h-full px-2 py-1" href="#">
+          <a class="nav-link group h-full px-2 py-1" href="./servicePage.html">
             <span class="nav-mark top-0 left-0 border-t border-l"></span>
             <span class="nav-mark top-0 right-0 border-t border-r"></span>
             <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
             <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
             <span class="text6-2 group-hover:font-bold">服務項目</span>
           </a>
-          <a class="nav-link group h-full px-2 py-1" href="#">
+          <a class="nav-link group h-full px-2 py-1" href="./blogPage.html">
             <span class="nav-mark top-0 left-0 border-t border-l"></span>
             <span class="nav-mark top-0 right-0 border-t border-r"></span>
             <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
             <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
             <span class="text6-2 group-hover:font-bold">部落格</span>
           </a>
-          <a class="nav-link group h-full px-2 py-1" href="#">
+          <a class="nav-link group h-full px-2 py-1" href="#footer">
             <span class="nav-mark top-0 left-0 border-t border-l"></span>
             <span class="nav-mark top-0 right-0 border-t border-r"></span>
             <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
             <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
             <span class="text6-2 group-hover:font-bold">聯絡我</span>
-        </a>
+          </a>
         </nav>
-        <button class="cursor-pointer md:hidden">
-          <img src="./src/assets/images/icon/menu-icon.svg" alt="漢堡選單" />
+        <button class="cursor-pointer md:hidden" id="menu-btn">
+          <img
+            src="./src/assets/images/icon/menu-icon.svg"
+            alt="漢堡選單"
+            id="menu-icon"
+          />
         </button>
+      </div>
+      <div class="hidden w-full z-10" id="menu-list">
+        <ul class="text-primary-700 text-center leading-10 font-semibold">
+          <li class="bg-primary-50">
+            <a class="nav-link group h-full px-2 py-1" href="index.html">
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">首頁</span>
+            </a>
+          </li>
+          <li class="bg-primary-50">
+            <a class="nav-link group h-full px-2 py-1" href="./porfolioPage.html">
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">作品集</span>
+            </a>
+          </li>
+          <li class="bg-primary-50">
+            <a
+              class="nav-link group h-full px-2 py-1"
+              href="./servicePage.html"
+            >
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">服務項目</span>
+            </a>
+          </li>
+          <li class="bg-primary-50">
+            <a class="nav-link group h-full px-2 py-1" href="./blogPage.html">
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">部落格</span>
+            </a>
+          </li>
+          <li class="bg-primary-50">
+            <a class="nav-link group h-full px-2 py-1" href="#footer">
+              <span class="nav-mark top-2 left-0 border-t border-l"></span>
+              <span class="nav-mark top-2 right-0 border-t border-r"></span>
+              <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
+              <span class="nav-mark bottom-2 right-0 border-b border-r"></span>
+              <span class="text6-2 group-hover:font-bold">聯絡我</span>
+            </a>
+          </li>
+          <li class="h-dvh bg-primary-900/70"></li>
+        </ul>
       </div>
     </header>
     </section>
@@ -142,7 +204,7 @@
         <div class="w-full grid lg:grid-cols-2 grid-cols-1 gap-12 lg:gap-20">
 
         <div id="modal" class="w-full flex flex-col gap-4 cursor-pointer ">
-            <img src="./src/assets/images/work-image/work-image1.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
+            <img src="./src/assets/images/work-image/work-image1.png" alt="" class="w-full lg:h-[400px] h-56 object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -158,7 +220,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4 cursor-pointer ">
-            <img src="./src/assets/images/work-image/work-image2.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
+            <img src="./src/assets/images/work-image/work-image2.png" alt="" class="w-full lg:h-[400px] h-56 object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -174,7 +236,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4 cursor-pointer ">
-            <img src="./src/assets/images/work-image/work-image3.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
+            <img src="./src/assets/images/work-image/work-image3.png" alt="" class="w-full lg:h-[400px] h-56 object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -190,7 +252,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4 cursor-pointer ">
-            <img src="./src/assets/images/work-image/work-image4.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
+            <img src="./src/assets/images/work-image/work-image4.png" alt="" class="w-full lg:h-[400px] h-56 object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -206,7 +268,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4 cursor-pointer ">
-            <img src="./src/assets/images/work-image/work-image5.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
+            <img src="./src/assets/images/work-image/work-image5.png" alt="" class="w-full lg:h-[400px] h-56 object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -222,7 +284,7 @@
         </div>
 
         <div class="w-full flex flex-col gap-4 cursor-pointer ">
-            <img src="./src/assets/images/work-image/work-image6.png" alt="" class="w-full lg:h-[400px] h-[224px] object-cover rounded-md ">
+            <img src="./src/assets/images/work-image/work-image6.png" alt="" class="w-full lg:h-[400px] h-56 object-cover rounded-md ">
 
             <div class="flex flex-col gap-6">
             <div class="flex flex-col gap-2">
@@ -313,7 +375,7 @@
       <!-- picture-area -->
       <section class="w-full bg-primary-100 flex flex-col gap-8 px-4 lg:px-0 pb-10 lg:py-20 rounded-2xl">
         <div class="flex flex-col justify-center items-center gap-4 lg:gap-6">
-            <img src="./src/assets/images/modal-image/modal-image1.png" alt="" class="rounded-[8px] lg:rpunded-[20px]">
+            <img src="./src/assets/images/modal-image/modal-image1.png" alt="" class="rounded-lg lg:rpunded-[20px]">
             <div class="flex flex-col gap-4 justify-center items-center">
             <h4 class="text-[20px lg:text-[24px] text-primary-800">主視覺</h4>
             <p class="fs-6 text-primary-600">可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
@@ -321,7 +383,7 @@
         </div>
 
          <div class="flex flex-col justify-center items-center gap-4 lg:gap-6">
-            <img src="./src/assets/images/modal-image/modal-image2.png" alt="" class="rounded-[8px] lg:rpunded-[20px]">
+            <img src="./src/assets/images/modal-image/modal-image2.png" alt="" class="rounded-lg lg:rpunded-[20px]">
             <div class="flex flex-col gap-4 justify-center items-center">
             <h4 class="text-[20px lg:text-[24px] text-primary-800">推薦查詢</h4>
             <p class="fs-6 text-primary-600">給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
@@ -336,8 +398,9 @@
     <!-- footer -->
     <section class="w-full">
         <footer
-      class="bg-[url(/src/assets/images/footer/footer-bg-sm.png)] py-10 px-3 flex justify-center "
-      alt="表尾背景圖-行動版"
+      class="bg-[url(/src/assets/images/footer/footer-bg-sm.png)] py-10 px-3 flex justify-center md:bg-[url(/src/assets/images/footer/footer-bg-lg.png)] "
+      alt="表尾背景圖"
+      id="footer"
     >
       <div class="flex flex-col justify-center items-center gap-10 md:flex-row md:w-[1296px] md:justify-between">
         <div
