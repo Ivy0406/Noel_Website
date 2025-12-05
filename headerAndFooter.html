@@ -11,12 +11,17 @@
     />
   </head>
   <body>
-    <header class="w-full bg-primary-50 h-14 flex flex-col items-center">
+    <header
+      class="w-full bg-primary-50 h-14 flex flex-col items-center pt-[11px] md:justify-center md:pt-0"
+    >
       <div
-        class="w-full flex justify-between items-center px-3 md:justify-start md:gap-[318px]"
+        class="w-full flex justify-between items-center px-3 md:justify-start md:gap-[318px] md:max-w-[1296px]"
       >
-        <a href="index.html"
-          ><img src="./src/assets/images/logo/logo.png" alt="Noel Logo"
+        <a href="./index.html"
+          ><img
+            class="w-[74px] h-[33px]"
+            src="./src/assets/images/logo/logo.svg"
+            alt="Noel Logo"
         /></a>
         <nav class="hidden w-[480px] h-8 justify-between items-center md:flex">
           <a class="nav-link group h-full px-2 py-1" href="index.html">
@@ -26,28 +31,28 @@
             <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
             <span class="text6-2 group-hover:font-bold">首頁</span></a
           >
-          <a class="nav-link group h-full px-2 py-1" href="#">
+          <a class="nav-link group h-full px-2 py-1" href="./porfolioPage.html">
             <span class="nav-mark top-0 left-0 border-t border-l"></span>
             <span class="nav-mark top-0 right-0 border-t border-r"></span>
             <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
             <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
             <span class="text6-2 group-hover:font-bold">作品集</span>
           </a>
-          <a class="nav-link group h-full px-2 py-1" href="#">
+          <a class="nav-link group h-full px-2 py-1" href="./servicePage.html">
             <span class="nav-mark top-0 left-0 border-t border-l"></span>
             <span class="nav-mark top-0 right-0 border-t border-r"></span>
             <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
             <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
             <span class="text6-2 group-hover:font-bold">服務項目</span>
           </a>
-          <a class="nav-link group h-full px-2 py-1" href="#">
+          <a class="nav-link group h-full px-2 py-1" href="./blogPage.html">
             <span class="nav-mark top-0 left-0 border-t border-l"></span>
             <span class="nav-mark top-0 right-0 border-t border-r"></span>
             <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
             <span class="nav-mark bottom-0 right-0 border-b border-r"></span>
             <span class="text6-2 group-hover:font-bold">部落格</span>
           </a>
-          <a class="nav-link group h-full px-2 py-1" href="#">
+          <a class="nav-link group h-full px-2 py-1" href="#footer">
             <span class="nav-mark top-0 left-0 border-t border-l"></span>
             <span class="nav-mark top-0 right-0 border-t border-r"></span>
             <span class="nav-mark bottom-0 left-0 border-b border-l"></span>
@@ -56,14 +61,15 @@
           </a>
         </nav>
         <button class="cursor-pointer md:hidden" id="menu-btn">
-          <img src="./src/assets/images/icon/menu-icon.svg" alt="漢堡選單" id="menu-icon" />
+          <img
+            src="./src/assets/images/icon/menu-icon.svg"
+            alt="漢堡選單"
+            id="menu-icon"
+          />
         </button>
       </div>
       <div class="hidden w-full z-10" id="menu-list">
-        <ul
-          class="text-primary-700 text-center leading-10 font-semibold"
-          
-        >
+        <ul class="text-primary-700 text-center leading-10 font-semibold">
           <li class="bg-primary-50">
             <a class="nav-link group h-full px-2 py-1" href="index.html">
               <span class="nav-mark top-2 left-0 border-t border-l"></span>
@@ -74,7 +80,7 @@
             </a>
           </li>
           <li class="bg-primary-50">
-            <a class="nav-link group h-full px-2 py-1" href="#">
+            <a class="nav-link group h-full px-2 py-1" href="./porfolioPage.html">
               <span class="nav-mark top-2 left-0 border-t border-l"></span>
               <span class="nav-mark top-2 right-0 border-t border-r"></span>
               <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
@@ -83,7 +89,10 @@
             </a>
           </li>
           <li class="bg-primary-50">
-            <a class="nav-link group h-full px-2 py-1" href="#">
+            <a
+              class="nav-link group h-full px-2 py-1"
+              href="./servicePage.html"
+            >
               <span class="nav-mark top-2 left-0 border-t border-l"></span>
               <span class="nav-mark top-2 right-0 border-t border-r"></span>
               <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
@@ -92,7 +101,7 @@
             </a>
           </li>
           <li class="bg-primary-50">
-            <a class="nav-link group h-full px-2 py-1" href="#">
+            <a class="nav-link group h-full px-2 py-1" href="./blogPage.html">
               <span class="nav-mark top-2 left-0 border-t border-l"></span>
               <span class="nav-mark top-2 right-0 border-t border-r"></span>
               <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
@@ -101,7 +110,7 @@
             </a>
           </li>
           <li class="bg-primary-50">
-            <a class="nav-link group h-full px-2 py-1" href="#">
+            <a class="nav-link group h-full px-2 py-1" href="#footer">
               <span class="nav-mark top-2 left-0 border-t border-l"></span>
               <span class="nav-mark top-2 right-0 border-t border-r"></span>
               <span class="nav-mark bottom-2 left-0 border-b border-l"></span>
@@ -116,7 +125,8 @@
 
     <footer
       class="bg-[url(/src/assets/images/footer/footer-bg-sm.png)] py-10 px-3 flex justify-center md:bg-[url(/src/assets/images/footer/footer-bg-lg.png)]"
-      alt="表尾背景圖-行動版"
+      alt="表尾背景圖"
+      id="footer"
     >
       <div
         class="flex flex-col justify-center items-center gap-10 md:flex-row md:w-[1296px] md:justify-between"
