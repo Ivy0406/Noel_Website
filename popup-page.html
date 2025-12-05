@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>popup</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Tourney:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="lg:max-w-[1076px] max-w-[351px] rounded-2xl bg-primary-50 ">
+      <!-- 叉叉區塊 -->
+      <section class="w-full pt-8 px-8 lg:px-10 flex justify-end">
+        <img
+          src="./src/assets/images/icon/close-icon.svg"
+          alt="close"
+          class="w-6 h-6"
+        />
+      </section>
+      <section class="flex flex-col lg:gap-10 gap-6 py-10">
+        <!-- 標題 -->
+        <div class="flex flex-col items-center justify-center gap-2">
+          <h3 class="text-[28px] text-primary-700">星際旅行訂票平台</h3>
+          <p class="text-[16px] text-primary-500">
+            悠遊宇宙的夢想，從這裡開始實現
+          </p>
+        </div>
+        <div
+          class="w-full flex lg:flex-row flex-col justify-between px-8 gap-6 lg:gap-0"
+        >
+          <!-- 左半段 -->
+          <span class="lg:pr-23">
+            STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。<br />
+            主要從地球出發，目的地包含月球、火星、水星、木星；
+            未來太空轉運站建
+            <br>置完畢，將再擴增目的地土星和金星。
+          </span>
+
+          <!-- 右半段 -->
+          <div
+            class="flex flex-col justify-start border-t lg:pl-6 gap-2 pt-6 lg:pt-0 lg:border-t-0 lg:border-l border-primary-400"
+          >
+          <!-- 電腦版 -->
+            <span class="text-primary-600 hidden lg:flex fs-6"
+              >設計原則：宇宙旅行、深色背景、強烈視覺效果</span
+            >
+            <span class="text-primary-600 hidden lg:flex fs-6"
+              >開發方式：Bootstrap、Javascript、RWD</span
+            >
+            <!-- 手機版 -->
+             <div class="flex flex-col justify-center items-center lg:hidden">
+            <span class="text-primary-600 "
+              >設計原則</span
+            >
+            <span class="text-primary-600 "
+              >宇宙旅行、深色背景、強烈視覺效果</span
+            >
+             </div>
+              <div class="flex flex-col justify-center items-center lg:hidden">
+            <span class="text-primary-600 "
+              >開發方式</span
+            >
+            <span class="text-primary-600 "
+              >Bootstrap、Javascript、RWD</span
+            >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- picture-area -->
+      <section class="w-full bg-primary-100 flex flex-col gap-8 px-4 lg:px-0 pb-10 lg:pb-20">
+        <div class="flex flex-col justify-center items-center gap-4 lg:gap-6">
+            <img src="./src/assets/images/modal-image/modal-image1.png" alt="" class="rounded-lg lg:rpunded-[20px]">
+            <div class="flex flex-col gap-4 justify-center items-center">
+            <h4 class="text-[20px lg:text-[24px] text-primary-800">主視覺</h4>
+            <p class="fs-6 text-primary-600">可直接設定日期、起迄星球、張數，快速查詢可購買的票券。</p>
+            </div>
+        </div>
+
+         <div class="flex flex-col justify-center items-center gap-4 lg:gap-6">
+            <img src="./src/assets/images/modal-image/modal-image2.png" alt="" class="rounded-lg lg:rpunded-[20px]">
+            <div class="flex flex-col gap-4 justify-center items-center">
+            <h4 class="text-[20px lg:text-[24px] text-primary-800">推薦查詢</h4>
+            <p class="fs-6 text-primary-600">給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。</p>
+            </div>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
